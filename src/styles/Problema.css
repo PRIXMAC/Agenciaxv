@@ -1,0 +1,32 @@
+.problema {
+    padding-top: clamp(40px, 6vw, 70px);
+    padding-bottom: clamp(60px, 8vw, 100px);
+    background: var(--black);
+}
+
+.problema-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.problema .section-tag {
+    margin-bottom: 8px;
+}
+
+.problema-title {
+    margin-block: 0 24px;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.problema-text {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.8;
+}

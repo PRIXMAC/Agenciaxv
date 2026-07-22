@@ -1,0 +1,13 @@
+.section-tag {
+    display: inline-block;
+    font-family: var(--heading);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: var(--primary);
+    background: rgba(244, 91, 42, 0.08);
+    padding: 0.3rem 1.2rem;
+    border-radius: 40px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}

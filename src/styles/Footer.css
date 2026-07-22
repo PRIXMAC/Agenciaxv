@@ -1,0 +1,55 @@
+.footer {
+    padding: 50px 0;
+    background: var(--black);
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logo {
+    width: 110px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-title {
+    margin-bottom: 25px;
+    font-size: clamp(2rem, 3vw, 3.4rem);
+    font-weight: 500;
+    color: var(--white);
+}
+
+.footer-link {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.footer-phone {
+    font-family: var(--heading);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--secondary);
+}
+
+.footer-link:hover {
+    color: var(--primary);
+}
+
+.footer-phone:hover {
+    color: var(--white);
+}
+
+.footer-icon {
+    margin-left: 8px;
+    vertical-align: middle;
+    font-size: 0.9em;
+}

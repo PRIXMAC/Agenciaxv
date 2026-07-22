@@ -1,0 +1,44 @@
+.contacto {
+    background: var(--black);
+}
+
+.contacto-cta {
+    padding: clamp(60px, 8vw, 95px) 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    background:
+        radial-gradient(circle at 50% 0%,
+            rgba(246, 82, 30, 0.2),
+            transparent 55%),
+        var(--black);
+}
+
+.contacto-title {
+    margin-block: 0 42px;
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.btn-contacto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 210px;
+    padding: 16px 30px;
+    border-radius: var(--radius-pill);
+    background: var(--secondary);
+    font-family: var(--heading);
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-contacto:hover {
+    background: #fff038;
+    transform: translateY(-4px);
+}

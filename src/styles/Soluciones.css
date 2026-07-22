@@ -1,0 +1,124 @@
+.soluciones {
+    position: relative;
+    padding-top: clamp(30px,5vw,60px);
+    padding-bottom: clamp(80px, 10vw, 110px);
+    background: #f4f4f4;
+}
+
+.soluciones-encabezado {
+    max-width: 650px;
+    margin-bottom: 70px;
+}
+
+.soluciones-title {
+    margin-block: 0 18px;
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.soluciones-intro {
+    max-width: 600px;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #1f1f1f;
+}
+
+.soluciones-layout {
+    position: relative;
+    min-height: 650px;
+}
+
+.solucion-card {
+    position: absolute;
+    width: 350px;
+    padding: 34px;
+    border-radius: var(--radius-lg);
+    background: var(--white);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.solucion-card-uno {
+    top: 0;
+    left: 0;
+}
+
+.solucion-card-dos {
+    right: 0;
+    bottom: 0;
+}
+
+.solucion-card-tres {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.solucion-card:hover {
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.2);
+}
+
+.solucion-card-uno:hover,
+.solucion-card-dos:hover {
+    transform: translateY(-8px);
+}
+
+.solucion-card-tres:hover {
+    transform: translate(-50%, -50%) translateY(-8px);
+}
+
+.solucion-numero {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-family: var(--heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.solucion-card h3 {
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.solucion-card p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #333;
+}
+
+.soluciones-accion {
+    margin-top: 20px;
+}
+
+.btn-soluciones {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 145px;
+    padding: 14px 28px;
+    border-radius: var(--radius-pill);
+    background: var(--primary);
+    font-family: var(--heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-soluciones:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+    transform: translateY(-3px);
+}

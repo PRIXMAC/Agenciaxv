@@ -1,0 +1,58 @@
+:root {
+    --primary: #F45B2A;
+    --primary-dark: #d94718;
+    --secondary: #FFD233;
+    --black: #1B1B1B;
+    --gray: #666666;
+    --light: #F8F8F8;
+    --white: #FFFFFF;
+    --border: #e2e2e2;
+    --sans: 'Roboto', sans-serif;
+    --heading: 'Montserrat', sans-serif;
+    --radius-lg: 22px;
+    --radius-md: 14px;
+    --radius-pill: 999px;
+    --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.08);
+    --shadow-card-hover: 0 12px 30px rgba(0, 0, 0, 0.1);
+    --shadow-elevated: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --section-padding: clamp(60px, 8vw, 100px) 0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 49px;
+    scrollbar-gutter: stable; 
+}
+
+body {
+    font-family: var(--sans);
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}

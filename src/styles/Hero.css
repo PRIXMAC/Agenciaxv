@@ -1,0 +1,88 @@
+.hero {
+    padding: 20px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-subtitle {
+    color: var(--primary);
+    font-family: var(--sans);
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 5.6rem);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-block: 20px 30px;
+}
+
+.text-yellow {
+    color: var(--secondary);
+}
+
+.text-orange {
+    color: var(--primary);
+}
+
+.hero-description {
+    color: var(--black);
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 35px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 15px 35px;
+    border-radius: var(--radius-pill);
+    font-family: var(--heading);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.hero-button:hover {
+    background: #d64a1d;
+}
+
+/* Cards decorativas del hero */
+.hero-cards {
+    position: relative;
+    height: clamp(320px, 50vw, 650px);
+}
+
+.hero-cards > div {
+    position: absolute;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: var(--shadow-elevated);
+}
+
+.card-yellow {
+    top: 60px;
+    right: 60px;
+    width: clamp(130px, 18vw, 260px);
+}
+
+.card-white {
+    top: 150px;
+    left: 20px;
+    width: clamp(150px, 20vw, 280px);
+}
+
+.card-orange {
+    bottom: 60px;
+    right: 40px;
+    width: clamp(120px, 17vw, 250px);
+}
