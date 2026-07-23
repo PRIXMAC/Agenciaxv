@@ -71,6 +71,7 @@
     position: relative;
     transition: color 0.3s;
     text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-link::after {
