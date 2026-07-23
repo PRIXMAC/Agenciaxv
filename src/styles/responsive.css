@@ -126,6 +126,11 @@
     }
 
     .dot {
+        justify-self: start;
+        margin-left: -49px;
+    }
+
+    .dot {
         position: absolute;
         top: 90px;
         left: 20px;
