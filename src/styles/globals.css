@@ -16,7 +16,7 @@
     --shadow-card-hover: 0 12px 30px rgba(0, 0, 0, 0.1);
     --shadow-elevated: 0 20px 40px rgba(0, 0, 0, 0.15);
     --section-padding: clamp(60px, 8vw, 100px) 0;
-    --title-size: clamp(2.5rem, 5vw, 4.5rem);
+    --title-size: clamp(2.8rem, 5vw, 5rem);
 }
 
 *,
