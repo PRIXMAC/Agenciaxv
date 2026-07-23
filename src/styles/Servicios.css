@@ -37,7 +37,7 @@
 
 .servicio-card h3 {
     margin-bottom: 16px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 800;
     line-height: 1.1;
     text-transform: uppercase;
@@ -46,6 +46,6 @@
 
 .servicio-card p {
     color: var(--gray);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
 }

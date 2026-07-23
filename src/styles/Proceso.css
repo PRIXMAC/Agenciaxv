@@ -20,7 +20,7 @@
 .proceso-text {
     max-width: 620px;
     margin: auto;
-    color: #555;
+    color: var(--black);
     line-height: 1.8;
 }
 
