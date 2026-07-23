@@ -2,14 +2,14 @@ import { useState } from 'react'
 import SectionTag from '../ui/SectionTag'
 
 const proyectos = [
-    { num: '01', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
-    { num: '02', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
-    { num: '03', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
-    { num: '04', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
-    { num: '05', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
-    { num: '06', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
-    { num: '07', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
-    { num: '08', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: '/images/proyecto-01.jpg' },
+    { num: '01', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '02', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '03', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '04', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '05', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '06', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '07', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '08', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
 ]
 
 function Proyectos() {

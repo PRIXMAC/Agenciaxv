@@ -6,7 +6,7 @@ function Footer() {
         <div className="container footer-inner">
             <div className="footer-left">
             <img
-                src="/images/Logo-Decimoquinta.png"
+                src={`${import.meta.env.BASE_URL}images/Logo-Decimoquinta.png`}
                 alt="D&eacute;cimo Quinta"
                 className="footer-logo"
             />

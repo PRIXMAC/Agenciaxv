@@ -26,13 +26,13 @@ function Hero() {
 
                     <div className="hero-cards">
                         <div className="card-yellow">
-                            <img src="/images/card-amarilla.jpg" alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/card-amarilla.jpg`} alt="" />
                         </div>
                         <div className="card-white">
-                            <img src="/images/card-blanca.jpg" alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/card-blanca.jpg`} alt="" />
                         </div>
                         <div className="card-orange">
-                            <img src="/images/card-naranja.jpg" alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/card-naranja.jpg`} alt="" />
                         </div>
                     </div>
                 </div>

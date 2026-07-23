@@ -6,14 +6,14 @@ const equipo = [
         cargo: 'Diseño Gráfico e Identidad Visual',
         profesion: 'Fundadora de Agencia Decimoquinta',
         desc: 'Convierto la visión de tu negocio en una marca profesional y funcional. Te ayudo a construir una identidad visual estratégica que te haga único e identificable, generando coherencia y confianza para conectar con tu cliente ideal.',
-        img: '/images/equipo/maria-asis.jpg',
+        img: `${import.meta.env.BASE_URL}images/equipo/maria-asis.jpg`,
     },
     {
         name: 'CAMILO PINEDA',
         cargo: 'Gestión de proyectos creativos y Marketing digital',
         profesion: 'Co-Fundador de Agencia Decimoquinta',
         desc: 'Ofrezco un servicio creativo multifocal, donde tendrás un único punto de contacto encargado de toda la ejecución creativa. Esto abarca una gestión profesional unificada y resultados coherentes.',
-        img: '/images/equipo/camilo-pineda.jpg',
+        img: `${import.meta.env.BASE_URL}images/equipo/camilo-pineda.jpg`,
     },
 ]
 

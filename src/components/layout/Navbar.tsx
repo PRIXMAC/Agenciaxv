@@ -19,7 +19,7 @@ function Navbar() {
         <header className="navbar">
         <div className="container navbar-inner">
             <a className="navbar-brand" href="#inicio">
-            <img src="/images/cropped-Logo-Decimoquinta-1.png" alt="Décimo Quinta" />
+            <img src={`${import.meta.env.BASE_URL}images/cropped-Logo-Decimoquinta-1.png`} alt="Décimo Quinta" />
             </a>
 
             <button
