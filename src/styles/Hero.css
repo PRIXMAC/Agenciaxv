@@ -56,7 +56,7 @@
     background: #d64a1d;
 }
 
-/* Cards decorativas del hero */
+/* Cards decorativas del hero — carrusel de posiciones */
 .hero-cards {
     position: relative;
     height: clamp(320px, 50vw, 650px);
@@ -67,22 +67,46 @@
     border-radius: 35px;
     overflow: hidden;
     box-shadow: var(--shadow-elevated);
+    will-change: top, left;
+    animation: card-position-cycle 15s ease-in-out infinite;
 }
 
-.card-yellow {
-    top: 60px;
-    right: 60px;
+.hero-cards .card-yellow {
     width: clamp(130px, 18vw, 260px);
+    animation-delay: 0s;
 }
 
-.card-white {
-    top: 150px;
-    left: 20px;
+.hero-cards .card-white {
     width: clamp(150px, 20vw, 280px);
+    animation-delay: -5s;
 }
 
-.card-orange {
-    bottom: 60px;
-    right: 40px;
+.hero-cards .card-orange {
     width: clamp(120px, 17vw, 250px);
+    animation-delay: -10s;
+}
+
+@keyframes card-position-cycle {
+    0%, 25% {
+        top: 10%;
+        left: 58%;
+    }
+    33%, 58% {
+        top: 28%;
+        left: 3%;
+    }
+    66%, 91% {
+        top: 62%;
+        left: 55%;
+    }
+    100% {
+        top: 10%;
+        left: 58%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-cards > div {
+        animation: none;
+    }
 }

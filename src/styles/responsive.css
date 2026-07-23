@@ -72,6 +72,17 @@
     .solucion-card {
         position: static;
         width: 100%;
+        transform: none;
+    }
+
+    .solucion-card-tres {
+        transform: none;
+    }
+
+    .solucion-card-uno:hover,
+    .solucion-card-dos:hover,
+    .solucion-card-tres:hover {
+        transform: translateY(-8px);
     }
 
     /* PROCESO — timeline vertical */
