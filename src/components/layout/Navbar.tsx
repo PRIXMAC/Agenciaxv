@@ -33,6 +33,13 @@ function Navbar() {
             </button>
 
             <nav className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
+            <button
+                className="navbar-close"
+                onClick={() => setMenuOpen(false)}
+                aria-label="Cerrar menú"
+            >
+                &times;
+            </button>
             <ul className="navbar-nav">
                 {navLinks.map((link) => (
                 <li key={link.href}>

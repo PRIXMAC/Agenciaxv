@@ -19,18 +19,36 @@
         z-index: 99;
     }
 
+    .navbar-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 36px;
+        line-height: 1;
+        cursor: pointer;
+        color: var(--black);
+    }
+
     .navbar-menu.open {
         right: 0;
     }
 
     .navbar-nav {
         flex-direction: column;
+        gap: 4px;
     }
 
     .nav-link {
         margin-left: 0;
-        padding: 12px 0;
+        padding: 10px 0;
         font-size: 17px;
+    }
+
+    .nav-link::after {
+        bottom: 4px;
     }
 
     /* HERO */

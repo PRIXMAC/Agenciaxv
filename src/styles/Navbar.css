@@ -52,6 +52,10 @@
     display: flex;
 }
 
+.navbar-close {
+    display: none;
+}
+
 .navbar-nav {
     display: flex;
 }
