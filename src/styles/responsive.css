@@ -112,7 +112,6 @@
     .timeline-item:nth-child(even) {
         grid-template-areas:
             "image"
-            "dot"
             "card";
         padding-left: 60px;
         gap: 12px;
@@ -126,15 +125,9 @@
     }
 
     .dot {
-        justify-self: start;
-        margin-left: -49px;
-    }
-
-    .dot {
         position: absolute;
         top: 90px;
-        left: 20px;
-        justify-self: start;
+        left: 13px;
     }
 
     .timeline-card {
