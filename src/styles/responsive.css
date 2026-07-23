@@ -180,14 +180,34 @@
         padding: 0 16px;
     }
 
+    .hero-title,
+    .promesa-title,
+    .problema-title,
+    .servicios-title,
+    .proyectos-title,
+    .soluciones-title,
+    .proceso-title,
+    .nosotros-title,
+    .contacto-title,
+    .footer-title {
+        text-align: center;
+    }
+
+    .section-tag,
+    .hero-button,
+    .btn-soluciones,
+    .btn-contacto {
+        display: block;
+        width: fit-content;
+        margin-inline: auto;
+    }
+
     .hero {
         padding: 40px 0;
     }
 
-    .promesa-title,
-    .problema-title {
-        font-size: clamp(2.2rem, 8vw, 2.5rem);
-        white-space: nowrap;
+    :root {
+        --title-size: clamp(1.8rem, 7vw, 2.5rem);
     }
 
     /* SERVICIOS */

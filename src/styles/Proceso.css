@@ -11,7 +11,7 @@
 
 .proceso-title {
     font-weight: 900;
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-size: var(--title-size);
     line-height: 1;
     text-transform: uppercase;
     margin: 15px 0 20px;

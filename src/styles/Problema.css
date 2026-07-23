@@ -16,7 +16,7 @@
 
 .problema-title {
     margin-block: 0 24px;
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-size: var(--title-size);
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
