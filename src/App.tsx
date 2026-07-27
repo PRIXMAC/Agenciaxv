@@ -11,7 +11,7 @@ import Soluciones from './components/sections/Soluciones'
 import Proceso from './components/sections/Proceso'
 import Nosotros from './components/sections/Nosotros'
 import Contacto from './components/sections/Contacto'
-import ProyectoDetalle from './pages/proyectoDetalle'
+import ProyectoDetalle from './pages/ProyectoDetalle'
 
 import './styles/Navbar.css'
 import './styles/Hero.css'
