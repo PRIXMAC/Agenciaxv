@@ -19,7 +19,7 @@ function ProyectoDetalle(){
         <section className="proyecto-detalle">
             <div className="pd-hero container">
                 <span className="pd-tagline">{proyecto.tagline}</span>
-                <img className="pd-logo" src={proyecto.logo} alt={proyecto.nombre}/>
+                <img className="pd-logo" src={`${import.meta.env.BASE_URL}${proyecto.logo}`} alt={proyecto.nombre}/>
 
                 <div className="pd-meta">
                     <span className="pd-meta-item">
@@ -43,7 +43,7 @@ function ProyectoDetalle(){
                     </div>
                     <div className="pd-resumen-imagen">
                         {proyecto.resumenImagen && (
-                            <img src={proyecto.resumenImagen} alt={'Mockup ${proyecto.nombre}'}/>
+                            <img src={`${import.meta.env.BASE_URL}${proyecto.resumenImagen}`} alt={`Mockup ${proyecto.nombre}`}/>
                         )}
                     </div>
                 </div>

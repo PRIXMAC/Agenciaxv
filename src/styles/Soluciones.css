@@ -81,7 +81,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 145px;
+    min-width: 210px;
     padding: 14px 28px;
     border-radius: var(--radius-pill);
     background: var(--primary);

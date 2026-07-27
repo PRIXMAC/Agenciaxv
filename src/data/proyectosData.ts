@@ -25,14 +25,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'bioconcordia',
         numero: '01',
         nombre: 'BioConcordia',
-        logo: '/images/proyectos/bioconcordia-logo.png',
+        logo: '/images/bioconcordia-logo.jpg',
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'UNA MARCA PARA UNA SOLUCIÓN CON VISIÓN SUSTENTABLE.',
         resumenTexto:
             'BioConcordia nació como respuesta a la necesidad de construir una marca potente y recordable para un producto agrícola innovador, capaz de ser reconocido en el rubro de los insumos agrícolas.',
-        resumenImagen: '/images/proyectos/bioconcordia-mockup.png',
+        resumenImagen: '/images/bioconcordia-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTitulo: 'NOMBRE',
@@ -48,14 +48,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'sustancial',
         numero: '02',
         nombre: 'Sustancial',
-        logo: '/images/proyectos/sustancial-logo.png',
+        logo: '/images/sustancial-logo.jpg',
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
         entrega: 'Lorem ipsum',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/proyectos/sustancial-mockup.png',
+        resumenImagen: '/images/sustancial-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTitulo: 'LOREM IPSUM',
@@ -71,14 +71,129 @@ export const proyectosData: Proyecto[] = [
         slug: 'all-in-pacha',
         numero: '03',
         nombre: 'All-in Pacha',
-        logo: '/images/proyectos/allinpacha-logo.png',
+        logo: '/images/allinpacha-logo.jpg',
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
         entrega: 'Lorem ipsum',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/proyectos/allinpacha-mockup.png',
+        resumenImagen: '/images/allinpacha-mockup.png',
+        desafioTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        nombreTitulo: 'LOREM IPSUM',
+        nombreTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        aplicaciones: [
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
+        ],
+    },
+    {
+        slug: 'consorcio-del-desierto',
+        numero: '04',
+        nombre: 'CONSORCIO DEL DESIERTO',
+        logo: '/images/consorciodeldesierto-logo.jpg',
+        tagline: 'Proyecto de identidad visual',
+        industria: 'Lorem ipsum',
+        entrega: 'Lorem ipsum',
+        resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
+        resumenTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+        resumenImagen: '/images/allinpacha-mockup.png',
+        desafioTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        nombreTitulo: 'LOREM IPSUM',
+        nombreTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        aplicaciones: [
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
+        ],
+    },
+    {
+        slug: 'proyecto-05',
+        numero: '05',
+        nombre: 'PROYECTO 05',
+        logo: '/images/proyecto05-logo.jpg',
+        tagline: 'Proyecto de identidad visual',
+        industria: 'Lorem ipsum',
+        entrega: 'Lorem ipsum',
+        resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
+        resumenTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+        resumenImagen: '/images/allinpacha-mockup.png',
+        desafioTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        nombreTitulo: 'LOREM IPSUM',
+        nombreTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        aplicaciones: [
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
+        ],
+    },
+    {
+        slug: 'proyecto-06',
+        numero: '06',
+        nombre: 'PROYECTO 06',
+        logo: '/images/proyecto06-logo.jpg',
+        tagline: 'Proyecto de identidad visual',
+        industria: 'Lorem ipsum',
+        entrega: 'Lorem ipsum',
+        resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
+        resumenTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+        resumenImagen: '/images/allinpacha-mockup.png',
+        desafioTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        nombreTitulo: 'LOREM IPSUM',
+        nombreTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        aplicaciones: [
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
+        ],
+    },
+    {
+        slug: 'proyecto-07',
+        numero: '07',
+        nombre: 'PROYECTO 07',
+        logo: '/images/proyecto07-logo.jpg',
+        tagline: 'Proyecto de identidad visual',
+        industria: 'Lorem ipsum',
+        entrega: 'Lorem ipsum',
+        resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
+        resumenTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+        resumenImagen: '/images/allinpacha-mockup.png',
+        desafioTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        nombreTitulo: 'LOREM IPSUM',
+        nombreTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        aplicaciones: [
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
+        ],
+    },
+    {
+        slug: 'proyecto-08',
+        numero: '08',
+        nombre: 'PROYECTO-08',
+        logo: '/images/proyecto08-logo.jpg',
+        tagline: 'Proyecto de identidad visual',
+        industria: 'Lorem ipsum',
+        entrega: 'Lorem ipsum',
+        resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
+        resumenTexto:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+        resumenImagen: '/images/allinpacha-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTitulo: 'LOREM IPSUM',

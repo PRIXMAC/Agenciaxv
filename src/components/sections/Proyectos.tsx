@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import SectionTag from '../ui/SectionTag'
 
 const proyectos = [
-    { num: '01', slug: 'bioconcordia', color: 'amarillo', title: 'BIOCONCORDIA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '02', slug: 'sustancial', color: 'naranjo', title: 'SUSTANCIAL', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '03', slug: 'all-in pacha', color: 'amarillo', title: 'ALL-IN PACHA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '04', slug: 'consorcio del desierto', color: 'naranjo', title: 'CONSORCIO DEL DESIERTO', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '05', slug: 'proyecto-05', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '06', slug: 'proyecto-06', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '07', slug: 'proyecto-07', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '08', slug: 'proyecto-08', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '01', slug: 'bioconcordia', color: 'amarillo', title: 'BIOCONCORDIA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/bioconcordia-logo.jpg` },
+    { num: '02', slug: 'sustancial', color: 'naranjo', title: 'SUSTANCIAL', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/sustancial-logo.jpg` },
+    { num: '03', slug: 'all-in-pacha', color: 'amarillo', title: 'ALL-IN PACHA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/allinpacha-logo.jpg` },
+    { num: '04', slug: 'consorcio-del-desierto', color: 'naranjo', title: 'CONSORCIO DEL DESIERTO', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/consorciodeldesierto-logo.jpg` },
+    { num: '05', slug: 'proyecto-05', color: 'naranjo', title: 'PROYECTO-05', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '06', slug: 'proyecto-06', color: 'amarillo', title: 'PROYECTO-06', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '07', slug: 'proyecto-07', color: 'naranjo', title: 'PROYECTO-07', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '08', slug: 'proyecto-08', color: 'amarillo', title: 'PROYECTO-08', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
 ]
 
 function Proyectos() {
