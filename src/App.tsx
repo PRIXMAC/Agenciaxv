@@ -1,3 +1,5 @@
+import { Routes, Route } from 'react-router-dom'
+
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
@@ -9,6 +11,7 @@ import Soluciones from './components/sections/Soluciones'
 import Proceso from './components/sections/Proceso'
 import Nosotros from './components/sections/Nosotros'
 import Contacto from './components/sections/Contacto'
+import ProyectoDetalle from './pages/proyectoDetalle'
 
 import './styles/Navbar.css'
 import './styles/Hero.css'
@@ -21,22 +24,32 @@ import './styles/Proceso.css'
 import './styles/Nosotros.css'
 import './styles/Contacto.css'
 import './styles/Footer.css'
+import './styles/ProyectoDetalle.css'
 import './styles/responsive.css'
+
+function Home() {
+    return (
+        <main>
+            <Hero />
+            <Promesa />
+            <Problema />
+            <Servicios />
+            <Proyectos />
+            <Soluciones />
+            <Proceso />
+            <Nosotros />
+        </main>
+    )
+}
 
 function App() {
     return (
         <>
             <Navbar />
-            <main>
-                <Hero />
-                <Promesa />
-                <Problema />
-                <Servicios />
-                <Proyectos />
-                <Soluciones />
-                <Proceso />
-                <Nosotros />
-            </main>
+            <Routes>
+                <Route path= "/" element={<Home />} />
+                <Route path= "/proyectos/:slug" element={<ProyectoDetalle />}/>
+            </Routes>
             <Contacto />
             <Footer />
         </>

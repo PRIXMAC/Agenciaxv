@@ -1,15 +1,16 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import SectionTag from '../ui/SectionTag'
 
 const proyectos = [
-    { num: '01', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '02', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '03', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '04', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '05', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '06', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '07', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '08', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '01', slug: 'bioconcordia', color: 'amarillo', title: 'BIOCONCORDIA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '02', slug: 'sustancial', color: 'naranjo', title: 'SUSTANCIAL', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '03', slug: 'all-in pacha', color: 'amarillo', title: 'ALL-IN PACHA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '04', slug: 'consorcio del desierto', color: 'naranjo', title: 'CONSORCIO DEL DESIERTO', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '05', slug: 'proyecto-05', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '06', slug: 'proyecto-06', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '07', slug: 'proyecto-07', color: 'naranjo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
+    { num: '08', slug: 'proyecto-08', color: 'amarillo', title: 'LOREM IPSUM', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
 ]
 
 function Proyectos() {
@@ -29,11 +30,13 @@ function Proyectos() {
 
                 <div className="proyectos-grid">
                     {proyectos.map((p) => (
-                        <article
+                        <Link
                             key={p.num}
+                            to={`/proyectos/${p.slug}`}
                             className={`proyecto-item ${active === p.num ? 'proyecto-active' : ''}`}
-                            onClick={() => setActive(active === p.num ? null : p.num)}
-                        >
+                            onMouseEnter={() => setActive(p.num)}
+                            onMouseLeave={() => setActive(null)}
+                            >
                             <div className="proyecto-bg">
                                 <img src={p.img} alt={p.title} />
                             </div>
@@ -43,7 +46,7 @@ function Proyectos() {
                                 <h3>{p.title}</h3>
                                 <p>{p.desc}</p>
                             </div>
-                        </article>
+                        </Link>
                     ))}
                 </div>
             </div>

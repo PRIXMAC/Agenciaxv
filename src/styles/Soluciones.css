@@ -29,13 +29,13 @@
 }
 
 .soluciones-layout {
-    position: relative;
-    min-height: 650px;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
 }
 
 .solucion-card {
-    position: absolute;
-    width: 350px;
+    flex: 1;
     padding: 34px;
     border-radius: var(--radius-lg);
     background: var(--white);
@@ -43,33 +43,9 @@
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.solucion-card-uno {
-    top: 0;
-    left: 0;
-}
-
-.solucion-card-dos {
-    right: 0;
-    bottom: 0;
-}
-
-.solucion-card-tres {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .solucion-card:hover {
     box-shadow: 0 20px 38px rgba(0, 0, 0, 0.2);
-}
-
-.solucion-card-uno:hover,
-.solucion-card-dos:hover {
     transform: translateY(-8px);
-}
-
-.solucion-card-tres:hover {
-    transform: translate(-50%, -50%) translateY(-8px);
 }
 
 .solucion-numero {

@@ -1,0 +1,140 @@
+===============================================
+  ESPECIFICACIONES DE IMÁGENES — AGENCIA XV
+===============================================
+
+ FORMATO: JPG (calidad 70-80%) o WebP
+ FONDO: Transparente donde se indique
+ PESO MÁXIMO: Lo indicado en cada caso
+
+
+-----------------------------------------------
+1. FONDOS DE PROYECTOS (grid de 4 columnas)
+-----------------------------------------------
+
+Archivos necesarios: 8 imágenes (una por proyecto)
+
+  Archivo          →  proyecto-01.jpg (actual)
+  Dimensions:      →  1200 × 800 px
+  Formato:         →  JPG
+  Peso máx:        →  200 KB
+  Relación aspecto: →  3:2 (horizontal)
+  Uso:             →  Fondo de cada tarjeta de proyecto.
+                      Se muestra con opacidad y un degradado
+                      encima. La imagen debe funcionar bien
+                      recortada (se aplica object-fit: cover).
+
+  IMPORTANTE: El diseño actual usa la misma imagen para los
+  8 proyectos. Se necesitan 8 imágenes diferentes.
+
+
+-----------------------------------------------
+2. TARJETAS DECORATIVAS DEL HERO
+-----------------------------------------------
+
+Archivos necesarios: 3 imágenes
+
+  a) card-amarilla.jpg
+     Dimensiones:  →  800 × 1000 px
+     Formato:      →  JPG
+     Peso máx:     →  100 KB
+     Relación:     →  4:5 (vertical)
+     Uso:          →  Tarjeta animada amarilla que flota
+                      en el hero. Se muestra máxima a 260px
+                      de ancho.
+
+  b) card-blanca.jpg
+     Dimensiones:  →  800 × 1000 px
+     Formato:      →  JPG
+     Peso máx:     →  100 KB
+     Relación:     →  4:5 (vertical)
+     Uso:          →  Tarjeta animada blanca. Se muestra
+                      máxima a 280px de ancho.
+
+  c) card-naranja.jpg
+     Dimensiones:  →  800 × 1000 px
+     Formato:      →  JPG
+     Peso máx:     →  100 KB
+     Relación:     →  4:5 (vertical)
+     Uso:          →  Tarjeta animada naranja. Se muestra
+                      máxima a 250px de ancho.
+
+  NOTA: Estas tarjetas son decorativas, se muestran
+  encimadas y rotadas. Pueden ser fotos de trabajo,
+  texturas o ilustraciones de la marca.
+
+
+-----------------------------------------------
+3. TIMELINE DEL PROCESO
+-----------------------------------------------
+
+Archivos necesarios: 4 imágenes (una por paso)
+
+  Archivos         →  proceso-01.jpg, proceso-02.jpg,
+                      proceso-03.jpg, proceso-04.jpg
+  Dimensiones:     →  400 × 400 px
+  Formato:         →  JPG
+  Peso máx:        →  80 KB
+  Relación aspecto: →  1:1 (cuadrada)
+  Uso:             →  Miniatura en el timeline del proceso.
+                      Se muestra en un cuadro de 110×110px.
+                      La imagen debe verse bien recortada
+                      al centro (object-fit: cover).
+
+  NOTA: El diseño actual usa la misma imagen para los
+  4 pasos. Se necesitan 4 imágenes diferentes.
+
+
+-----------------------------------------------
+4. FOTOS DE EQUIPO (NOSOTROS)
+-----------------------------------------------
+
+Archivos necesarios: 2 imágenes (una por persona)
+
+  Archivos         →  maria-asis.jpg, camilo-pineda.jpg
+  Dimensiones:     →  400 × 474 px
+  Formato:         →  JPG
+  Peso máx:        →  80 KB
+  Relación aspecto: →  190:230 (vertical, casi cuadrada)
+  Uso:             →  Foto de perfil del equipo. Se muestra
+                      en un círculo de 190×230px.
+                      Deben ser fotos tipo retrato,
+                      bien encuadradas de arriba a la cintura.
+
+
+-----------------------------------------------
+5. LOGOS
+-----------------------------------------------
+
+  a) Logo navbar (cropped-Logo-Decimoquinta-1.png)
+     Dimensiones:  →  400 × 100 px (aprox)
+     Formato:      →  PNG con fondo TRANSPARENTE
+     Peso máx:     →  30 KB
+     Uso:          →  Se muestra a 120px de ancho en la
+                      barra de navegación.
+
+  b) Logo footer (Logo-Decimoquinta.png)
+     Dimensiones:  →  500 × 150 px (aprox)
+     Formato:      →  PNG con fondo TRANSPARENTE
+     Peso máx:     →  40 KB
+     Uso:          →  Se muestra en el footer. Puede ser
+                      más grande que el del navbar.
+
+
+===============================================
+  RESUMEN RÁPIDO
+===============================================
+
+  Categoría               Cantidad   Dimensiones     Peso máx
+  ──────────────────────  ────────   ────────────    ────────
+  Fondos de proyecto          8       1200 × 800     200 KB
+  Cards del hero              3        800 × 1000    100 KB
+  Timeline del proceso        4        400 × 400      80 KB
+  Fotos de equipo             2        400 × 474      80 KB
+  Logo navbar                 1        400 × 100      30 KB
+  Logo footer                 1        500 × 150      40 KB
+  ──────────────────────  ────────   ────────────    ────────
+  TOTAL                      19 imágenes
+
+  Formato general: JPG 70-80% calidad (o WebP)
+  Las imágenes deben funcionar bien recortadas
+  al centro (object-fit: cover).
