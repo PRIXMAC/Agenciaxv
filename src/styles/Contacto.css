@@ -26,13 +26,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 210px;
-    padding: 16px 30px;
+    min-width: 240px;
+    padding: 18px 40px;
     border-radius: var(--radius-pill);
     background: var(--secondary);
     font-family: var(--heading);
     font-size: 0.82rem;
-    font-weight: 700;
+    font-weight:700;
     text-transform: uppercase;
     color: var(--black);
     transition: transform 0.3s, background 0.3s;
