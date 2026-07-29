@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 
+const base = import.meta.env.BASE_URL
+
 const navLinks = [
     { label: 'Inicio', href: '#inicio' },
     { label: 'Promesa', href: '#promesa' },
@@ -37,7 +39,7 @@ function Navbar() {
         <header className="navbar">
         <div className="container navbar-inner">
             <Link className="navbar-brand" to="/" onClick={() => setMenuOpen(false)}>
-            <img src="/images/cropped-Logo-Decimoquinta-1.png" alt="Décimo Quinta" />
+            <img src= {`${base}images/cropped-Logo-Decimoquinta-1.png`} alt="Décimo Quinta" />
             </Link>
 
             <button

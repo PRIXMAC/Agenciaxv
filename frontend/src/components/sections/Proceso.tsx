@@ -1,10 +1,12 @@
 import SectionTag from '../ui/SectionTag'
 
+const base = import.meta.env.BASE_URL;
+
 const pasos = [
-    { num: '01', title: 'Diagnóstico', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'orange', img: '/images/proceso-01.jpg' },
-    { num: '02', title: 'Estrategia', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'yellow', img: '/images/proceso-01.jpg' },
-    { num: '03', title: 'Diseño', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'orange', img: '/images/proceso-01.jpg' },
-    { num: '04', title: 'Implementación', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'yellow', img: '/images/proceso-01.jpg' },
+    { num: '01', title: 'Diagnóstico', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'orange', img: `${base}images/proceso-01.jpg` },
+    { num: '02', title: 'Estrategia', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'yellow', img: `${base}images/proceso-01.jpg` },
+    { num: '03', title: 'Diseño', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'orange', img: `${base}images/proceso-01.jpg` },
+    { num: '04', title: 'Implementación', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.', dot: 'yellow', img: `${base}images/proceso-01.jpg` },
 ]
 
 function Proceso() {

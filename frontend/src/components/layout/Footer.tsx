@@ -1,12 +1,14 @@
 import { FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 
+const base = import.meta.env.BASE_URL
+
 function Footer() {
     return (
         <footer className="footer">
         <div className="container footer-inner">
             <div className="footer-left">
             <img
-                src="/images/Logo-Decimoquinta.png"
+                src= {`${base}images/Logo-Decimoquinta.png`}
                 alt="D&eacute;cimo Quinta"
                 className="footer-logo"
             />
