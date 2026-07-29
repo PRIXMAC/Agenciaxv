@@ -74,10 +74,10 @@
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(to top,
-            rgba(255, 255, 255, 0.75) 0%,
-            rgba(255, 255, 255, 0.35) 50%,
-            rgba(255, 255, 255, 0.08) 100%);
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.03) 100%);
     transition: opacity 0.4s;
 }
 
@@ -123,28 +123,32 @@
 }
 
 .proyecto-active .proyecto-bg img {
-    opacity: 0.55;
+    opacity: 1;
 }
 
 .proyecto-active .proyecto-overlay {
     background:
-        radial-gradient(circle at 0% 100%, rgba(255, 210, 51, 0.5) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, rgba(244, 91, 42, 0.5) 0%, transparent 50%),
-        linear-gradient(to top,
-            rgba(0, 0, 0, 0.6) 0%,
-            rgba(0, 0, 0, 0.2) 50%,
-            rgba(0, 0, 0, 0.1) 100%);
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(255, 210, 51, 0.45) 0%,
+            transparent 60%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(244, 91, 42, 0.45) 0%,
+            transparent 60%
+        );
 }
+
 
 .proyecto-active .proyecto-numero {
-    color: var(--white);
+    color: var(--primary);
 }
 
-.proyecto-active .proyecto-contenido h3,
-.proyecto-active .proyecto-contenido p {
-    color: var(--white);
+.proyecto-active .proyecto-contenido h3 {
+    color: var(--black);
 }
 
 .proyecto-active .proyecto-contenido p {
-    color: rgba(255, 255, 255, 0.85);
+    color: #333;
 }

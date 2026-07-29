@@ -10,7 +10,6 @@ export interface Proyecto {
     resumenTexto: string
     resumenImagen: string
     desafioTexto: string
-    nombreTitulo: string
     nombreTexto: string
     aplicaciones: {
         titulo: string
@@ -35,7 +34,6 @@ export const proyectosData: Proyecto[] = [
         resumenImagen: '/images/bioconcordia-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'NOMBRE',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
@@ -50,20 +48,20 @@ export const proyectosData: Proyecto[] = [
         nombre: 'Sustancial',
         logo: '/images/sustancial-logo.jpg',
         tagline: 'Proyecto de identidad visual',
-        industria: 'Lorem ipsum',
-        entrega: 'Lorem ipsum',
+        industria: 'Agricultura',
+        entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
         resumenImagen: '/images/sustancial-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'LOREM IPSUM',
+        
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', color: 'amarillo' },
+            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
         ],
     },
@@ -73,20 +71,19 @@ export const proyectosData: Proyecto[] = [
         nombre: 'All-in Pacha',
         logo: '/images/allinpacha-logo.jpg',
         tagline: 'Proyecto de identidad visual',
-        industria: 'Lorem ipsum',
-        entrega: 'Lorem ipsum',
+        industria: 'Agricultura',
+        entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
         resumenImagen: '/images/allinpacha-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'LOREM IPSUM',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
         ],
     },
@@ -96,20 +93,19 @@ export const proyectosData: Proyecto[] = [
         nombre: 'CONSORCIO DEL DESIERTO',
         logo: '/images/consorciodeldesierto-logo.jpg',
         tagline: 'Proyecto de identidad visual',
-        industria: 'Lorem ipsum',
-        entrega: 'Lorem ipsum',
+        industria: 'Agricultura',
+        entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
         resumenImagen: '/images/allinpacha-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'LOREM IPSUM',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
         ],
     },
@@ -120,19 +116,18 @@ export const proyectosData: Proyecto[] = [
         logo: '/images/proyecto05-logo.jpg',
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
-        entrega: 'Lorem ipsum',
+        entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
         resumenImagen: '/images/allinpacha-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'LOREM IPSUM',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
         ],
     },
@@ -143,19 +138,18 @@ export const proyectosData: Proyecto[] = [
         logo: '/images/proyecto06-logo.jpg',
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
-        entrega: 'Lorem ipsum',
+        entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
         resumenImagen: '/images/allinpacha-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'LOREM IPSUM',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
         ],
     },
@@ -166,19 +160,18 @@ export const proyectosData: Proyecto[] = [
         logo: '/images/proyecto07-logo.jpg',
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
-        entrega: 'Lorem ipsum',
+        entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
         resumenImagen: '/images/allinpacha-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'LOREM IPSUM',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
+            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
         ],
     },
@@ -189,23 +182,19 @@ export const proyectosData: Proyecto[] = [
         logo: '/images/proyecto08-logo.jpg',
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
-        entrega: 'Lorem ipsum',
+        entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
         resumenImagen: '/images/allinpacha-mockup.png',
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        nombreTitulo: 'LOREM IPSUM',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'amarillo' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
+            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'negro' },
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', color: 'naranjo' },
         ],
     },
-    // Proyectos 04–08: duplica el patrón de arriba y reemplaza los textos/imágenes
-    // reales de cada marca cuando los tengas. El slug debe coincidir con el que
-    // uses en el "numero" (p) del array `proyectos` de Proyectos.tsx.
-]
+] 

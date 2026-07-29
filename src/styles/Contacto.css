@@ -7,7 +7,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     background:
         radial-gradient(circle at 50% 0%,
-            rgba(246, 82, 30, 0.2),
+            rgba(246, 82, 30, 0.1),
             transparent 55%),
         var(--black);
 }

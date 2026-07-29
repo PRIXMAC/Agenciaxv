@@ -1,20 +1,34 @@
-import { useState } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import SectionTag from '../ui/SectionTag'
+import { proyectosData } from '../../data/proyectosData'
 
-const proyectos = [
-    { num: '01', slug: 'bioconcordia', color: 'amarillo', title: 'BIOCONCORDIA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/bioconcordia-logo.jpg` },
-    { num: '02', slug: 'sustancial', color: 'naranjo', title: 'SUSTANCIAL', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/sustancial-logo.jpg` },
-    { num: '03', slug: 'all-in-pacha', color: 'amarillo', title: 'ALL-IN PACHA', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/allinpacha-logo.jpg` },
-    { num: '04', slug: 'consorcio-del-desierto', color: 'naranjo', title: 'CONSORCIO DEL DESIERTO', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/consorciodeldesierto-logo.jpg` },
-    { num: '05', slug: 'proyecto-05', color: 'naranjo', title: 'PROYECTO-05', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '06', slug: 'proyecto-06', color: 'amarillo', title: 'PROYECTO-06', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '07', slug: 'proyecto-07', color: 'naranjo', title: 'PROYECTO-07', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-    { num: '08', slug: 'proyecto-08', color: 'amarillo', title: 'PROYECTO-08', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', img: `${import.meta.env.BASE_URL}images/proyecto-01.jpg` },
-]
+const proyectos = proyectosData.slice(0, 8).map((p) => ({
+    num: p.numero,
+    slug: p.slug,
+    color: parseInt(p.numero) % 2 === 0 ? 'naranjo' : 'amarillo' as const,
+    title: p.nombre,
+    desc: p.tagline,
+    img: p.logo,
+}))
 
 function Proyectos() {
     const [active, setActive] = useState<string | null>(null)
+    const gridRef = useRef<HTMLDivElement>(null)
+
+    const handleTouchMove = useCallback((e: React.TouchEvent) => {
+        const touch = e.touches[0]
+        const el = document.elementFromPoint(touch.clientX, touch.clientY)
+        const card = el?.closest('.proyecto-item') as HTMLElement | null
+        if (card) {
+            const num = card.getAttribute('data-num')
+            if (num) setActive(num)
+        }
+    }, [])
+
+    const handleTouchEnd = useCallback(() => {
+        setActive(null)
+    }, [])
 
     return (
         <section id="proyectos" className="proyectos">
@@ -28,10 +42,16 @@ function Proyectos() {
                     </p>
                 </div>
 
-                <div className="proyectos-grid">
+                <div
+                    className="proyectos-grid"
+                    ref={gridRef}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
+                >
                     {proyectos.map((p) => (
                         <Link
                             key={p.num}
+                            data-num={p.num}
                             to={`/proyectos/${p.slug}`}
                             className={`proyecto-item ${active === p.num ? 'proyecto-active' : ''}`}
                             onMouseEnter={() => setActive(p.num)}

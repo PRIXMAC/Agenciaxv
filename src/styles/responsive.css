@@ -122,12 +122,15 @@
 
     .timeline-grid {
         grid-template-columns: 1fr;
-        gap: 0;
+        grid-template-rows: none;
+        gap: 30px;
     }
 
     .timeline-item,
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
+        grid-row: span 2;
+        grid-template-rows: auto auto;
         grid-template-areas:
             "image"
             "card";
@@ -177,7 +180,7 @@
 /* CELULAR (max-width: 575px)*/
 @media (max-width: 575px) {
     .container {
-        padding: 0 16px;
+        padding-inline: 16px;
     }
 
     .hero-title,
@@ -238,7 +241,7 @@
     }
 
     .proyecto-item {
-        min-height: 220px;
+        min-height: 280px;
         border-right: none !important;
     }
 

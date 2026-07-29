@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
@@ -43,6 +43,9 @@ function Home() {
 }
 
 function App() {
+    const location = useLocation()
+    const isHome = location.pathname === '/'
+
     return (
         <>
             <Navbar />
@@ -50,7 +53,7 @@ function App() {
                 <Route path= "/" element={<Home />} />
                 <Route path= "/proyectos/:slug" element={<ProyectoDetalle />}/>
             </Routes>
-            <Contacto />
+            {isHome && <Contacto />}
             <Footer />
         </>
     )

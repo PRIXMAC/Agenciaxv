@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate, useLocation, Link } from 'react-router-dom'
 
 const navLinks = [
     { label: 'Inicio', href: '#inicio' },
@@ -14,13 +15,30 @@ const navLinks = [
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
+    const navigate = useNavigate()
+    const location = useLocation()
+
+    const handleNavClick = (e: React.MouseEvent, href: string) => {
+        e.preventDefault()
+        const sectionId = href.replace('#', '')
+
+        if (location.pathname !== '/') {
+            navigate('/')
+            setTimeout(() => {
+                document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+            }, 100)
+        } else {
+            document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+        }
+        setMenuOpen(false)
+    }
 
     return (
         <header className="navbar">
         <div className="container navbar-inner">
-            <a className="navbar-brand" href="#inicio">
-            <img src={`${import.meta.env.BASE_URL}images/cropped-Logo-Decimoquinta-1.png`} alt="Décimo Quinta" />
-            </a>
+            <Link className="navbar-brand" to="/" onClick={() => setMenuOpen(false)}>
+            <img src="/images/cropped-Logo-Decimoquinta-1.png" alt="Décimo Quinta" />
+            </Link>
 
             <button
             className={`navbar-toggler ${menuOpen ? 'active' : ''}`}
@@ -46,7 +64,7 @@ function Navbar() {
                     <a
                     className="nav-link"
                     href={link.href}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={(e) => handleNavClick(e, link.href)}
                     >
                     {link.label}
                     </a>

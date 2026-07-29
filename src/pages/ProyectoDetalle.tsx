@@ -1,8 +1,13 @@
 import {useParams, Link } from 'react-router-dom'
+import { useEffect } from 'react'
 import { proyectosData } from '../data/proyectosData'
 
 function ProyectoDetalle(){
     const{ slug } = useParams()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [slug])
     const proyecto = proyectosData.find((p)=> p.slug === slug)
 
     if (!proyecto) {
@@ -19,7 +24,7 @@ function ProyectoDetalle(){
         <section className="proyecto-detalle">
             <div className="pd-hero container">
                 <span className="pd-tagline">{proyecto.tagline}</span>
-                <img className="pd-logo" src={`${import.meta.env.BASE_URL}${proyecto.logo}`} alt={proyecto.nombre}/>
+                <img className="pd-logo" src={proyecto.logo} alt={proyecto.nombre}/>
 
                 <div className="pd-meta">
                     <span className="pd-meta-item">
@@ -37,34 +42,37 @@ function ProyectoDetalle(){
             <div className="pd-resumen">
                 <div className="container pd-resumen-grid">
                     <div className="pd-resumen-texto">
-                        <span className="section-tag">RESUMEN</span>
+                        <span className="section-tag-proyecto">RESUMEN</span>
                         <h2>{proyecto.resumenTitulo}</h2>
                         <p>{proyecto.resumenTexto}</p>
                     </div>
                     <div className="pd-resumen-imagen">
                         {proyecto.resumenImagen && (
-                            <img src={`${import.meta.env.BASE_URL}${proyecto.resumenImagen}`} alt={`Mockup ${proyecto.nombre}`}/>
+                            <img src={proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`}/>
                         )}
                     </div>
                 </div>
             </div>
 
             <div className="pd-detalles">
-                <div className="container pd-detales-grid">
-                    <div className="pd-detalle-card">
+                <div className="container pd-detalles-grid">
+                    <article className="pd-detalle-card">
                         <h3>EL DESAFÍO</h3>
                         <p>{proyecto.desafioTexto}</p>
-                    </div>
-                    <div className="pd-detalle-card">
-                        <h3>{proyecto.nombreTitulo}</h3>
+                    </article>
+
+                    <article className="pd-detalle-card">
+                        <h3>NOMBRE</h3>
                         <p>{proyecto.nombreTexto}</p>
-                    </div>
+                    </article>
                 </div>
             </div>
 
             <div className="pd-aplicaciones container">
-                <span className="section-tag">APLICACIONES</span>
-                <h2>UNA IDENTIDAD PARA DISTINTOS SOPORTES.</h2>
+                <span className="section-tag-proyecto">APLICACIONES</span>
+                <h2>UNA IDENTIDAD PARA 
+                    <br />
+                    DISTINTOS SOPORTES.</h2>
                 <p>
                     El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y
                     piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y
@@ -73,9 +81,9 @@ function ProyectoDetalle(){
 
                 {proyecto.aplicaciones.map((app, i) => (
                     <div key={i} className="pd-aplicacion-bloque">
-                        <></>
-                        <></>
-                        <div>
+                        <h4>{app.titulo}</h4>
+                        <p>{app.texto}</p>
+                        <div className={`pd-aplicacion-caja pd-caja-${app.color}`}>
                             {app.imagen ? (
                                 <img src={app.imagen} alt={app.titulo} />
                             ) : (
