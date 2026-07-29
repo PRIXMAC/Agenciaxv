@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export interface Proyecto {
     slug: string
     numero: string
@@ -24,14 +26,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'bioconcordia',
         numero: '01',
         nombre: 'BioConcordia',
-        logo: '/images/bioconcordia-logo.jpg',
+        logo: `${base}images/bioconcordia-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'UNA MARCA PARA UNA SOLUCIÓN CON VISIÓN SUSTENTABLE.',
         resumenTexto:
             'BioConcordia nació como respuesta a la necesidad de construir una marca potente y recordable para un producto agrícola innovador, capaz de ser reconocido en el rubro de los insumos agrícolas.',
-        resumenImagen: '/images/bioconcordia-mockup.png',
+        resumenImagen: `${base}images/bioconcordia-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
@@ -46,14 +48,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'sustancial',
         numero: '02',
         nombre: 'Sustancial',
-        logo: '/images/sustancial-logo.jpg',
+        logo:  `${base}images/sustancial-logo.jpg` ,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/sustancial-mockup.png',
+        resumenImagen: `${base}images/sustancial-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         
@@ -69,14 +71,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'all-in-pacha',
         numero: '03',
         nombre: 'All-in Pacha',
-        logo: '/images/allinpacha-logo.jpg',
+        logo: `${base}images/allinpacha-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/allinpacha-mockup.png',
+        resumenImagen: `${base}images/allinpacha-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
@@ -91,14 +93,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'consorcio-del-desierto',
         numero: '04',
         nombre: 'CONSORCIO DEL DESIERTO',
-        logo: '/images/consorciodeldesierto-logo.jpg',
+        logo: `${base}/images/consorciodeldesierto-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/allinpacha-mockup.png',
+        resumenImagen: `${base}/images/allinpacha-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
@@ -113,14 +115,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'proyecto-05',
         numero: '05',
         nombre: 'PROYECTO 05',
-        logo: '/images/proyecto05-logo.jpg',
+        logo: `${base}images/proyecto05-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/allinpacha-mockup.png',
+        resumenImagen: `${base}images/allinpacha-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
@@ -135,14 +137,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'proyecto-06',
         numero: '06',
         nombre: 'PROYECTO 06',
-        logo: '/images/proyecto06-logo.jpg',
+        logo: `${base}images/proyecto06-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/allinpacha-mockup.png',
+        resumenImagen: `${base}images/allinpacha-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
@@ -157,14 +159,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'proyecto-07',
         numero: '07',
         nombre: 'PROYECTO 07',
-        logo: '/images/proyecto07-logo.jpg',
+        logo: `${base}images/proyecto07-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/allinpacha-mockup.png',
+        resumenImagen: `${base}images/allinpacha-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
@@ -179,14 +181,14 @@ export const proyectosData: Proyecto[] = [
         slug: 'proyecto-08',
         numero: '08',
         nombre: 'PROYECTO-08',
-        logo: '/images/proyecto08-logo.jpg',
+        logo: `${base}images/proyecto08-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: '/images/allinpacha-mockup.png',
+        resumenImagen: `${base}images/allinpacha-mockup.png`,
         desafioTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
