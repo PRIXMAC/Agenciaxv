@@ -22,7 +22,7 @@ function ProyectoDetalle(){
 
     return (
         <section className="proyecto-detalle">
-            <div className="pd-hero container">
+            <div  id= "contexto" className="pd-hero container">
                 <span className="pd-tagline">{proyecto.tagline}</span>
                 <img className="pd-logo" src={proyecto.logo} alt={proyecto.nombre}/>
 
@@ -39,7 +39,7 @@ function ProyectoDetalle(){
                 </div>
             </div>
 
-            <div className="pd-resumen">
+            <div id="identidad" className="pd-resumen">
                 <div className="container pd-resumen-grid">
                     <div className="pd-resumen-texto">
                         <span className="section-tag-proyecto">RESUMEN</span>
@@ -54,7 +54,7 @@ function ProyectoDetalle(){
                 </div>
             </div>
 
-            <div className="pd-detalles">
+            <div id= "sistema" className="pd-detalles">
                 <div className="container pd-detalles-grid">
                     <article className="pd-detalle-card">
                         <h3>EL DESAFÍO</h3>
@@ -68,7 +68,7 @@ function ProyectoDetalle(){
                 </div>
             </div>
 
-            <div className="pd-aplicaciones container">
+            <div id="aplicaciones" className="pd-aplicaciones container">
                 <span className="section-tag-proyecto">APLICACIONES</span>
                 <h2>UNA IDENTIDAD PARA 
                     <br />

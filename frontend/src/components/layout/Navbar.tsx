@@ -1,80 +1,125 @@
 import { useState } from 'react'
-import { useNavigate, useLocation, Link } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 
 const base = import.meta.env.BASE_URL
 
-const navLinks = [
+type NavLink =
+    | { label: string; href: string }
+    | { label: string; to: string }
+
+const navLinksHome: NavLink[] = [
     { label: 'Inicio', href: '#inicio' },
     { label: 'Promesa', href: '#promesa' },
     { label: 'Problema', href: '#problema' },
     { label: 'Servicios', href: '#servicios' },
     { label: 'Proyectos', href: '#proyectos' },
     { label: 'Paquetes', href: '#soluciones' },
-    { label: 'Proceso xv', href: '#proceso' },
+    { label: 'Proceso XV', href: '#proceso' },
     { label: 'Nosotros', href: '#nosotros' },
     { label: 'Contacto', href: '#contacto' },
 ]
 
+const navLinksProyecto: NavLink[] = [
+    { label: 'Inicio', to: '/' },
+    { label: 'Contexto', href: '#contexto' },
+    { label: 'Identidad', href: '#identidad' },
+    { label: 'Sistema', href: '#sistema' },
+    { label: 'Aplicaciones', href: '#aplicaciones' },
+]
+
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
-    const navigate = useNavigate()
     const location = useLocation()
 
-    const handleNavClick = (e: React.MouseEvent, href: string) => {
-        e.preventDefault()
-        const sectionId = href.replace('#', '')
+    const esProyectoDetalle = location.pathname.startsWith('/proyectos/')
 
-        if (location.pathname !== '/') {
-            navigate('/')
-            setTimeout(() => {
-                document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
-            }, 100)
-        } else {
-            document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    const navLinks = esProyectoDetalle
+        ? navLinksProyecto
+        : navLinksHome
+
+    const handleNavClick = (
+        e: React.MouseEvent<HTMLAnchorElement>,
+        href: string
+    ) => {
+        e.preventDefault()
+
+        const sectionId = href.replace('#', '')
+        const elemento = document.getElementById(sectionId)
+
+        if (elemento) {
+            elemento.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            })
         }
+
         setMenuOpen(false)
     }
 
     return (
         <header className="navbar">
-        <div className="container navbar-inner">
-            <Link className="navbar-brand" to="/" onClick={() => setMenuOpen(false)}>
-            <img src= {`${base}images/cropped-Logo-Decimoquinta-1.png`} alt="Décimo Quinta" />
-            </Link>
+            <div className="container navbar-inner">
+                <Link
+                    className="navbar-brand"
+                    to="/"
+                    onClick={() => setMenuOpen(false)}
+                >
+                    <img
+                        src={`${base}images/cropped-Logo-Decimoquinta-1.png`}
+                        alt="Décimo Quinta"
+                    />
+                </Link>
 
-            <button
-            className={`navbar-toggler ${menuOpen ? 'active' : ''}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Menú"
-            >
-            <span />
-            <span />
-            <span />
-            </button>
+                <button
+                    className={`navbar-toggler ${
+                        menuOpen ? 'active' : ''
+                    }`}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Menú"
+                >
+                    <span />
+                    <span />
+                    <span />
+                </button>
 
-            <nav className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
-            <button
-                className="navbar-close"
-                onClick={() => setMenuOpen(false)}
-                aria-label="Cerrar menú"
-            >
-                &times;
-            </button>
-            <ul className="navbar-nav">
-                {navLinks.map((link) => (
-                <li key={link.href}>
-                    <a
-                    className="nav-link"
-                    href={link.href}
-                    onClick={(e) => handleNavClick(e, link.href)}
+                <nav
+                    className={`navbar-menu ${
+                        menuOpen ? 'open' : ''
+                    }`}
+                >
+                    <button
+                        className="navbar-close"
+                        onClick={() => setMenuOpen(false)}
+                        aria-label="Cerrar menú"
                     >
-                    {link.label}
-                    </a>
-                </li>
-                ))}
-            </ul>
-            </nav>
-        </div>
+                        &times;
+                    </button>
+
+                    <ul className="navbar-nav">
+                        {navLinks.map((link) => (
+                            <li key={link.label}>
+                                {'to' in link ? (
+                                    <Link
+                                        className="nav-link"
+                                        to={link.to}
+                                        onClick={() => setMenuOpen(false)}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                ) : (
+                                    <a
+                                        className="nav-link"
+                                        href={link.href}
+                                        onClick={(e) => handleNavClick(e, link.href)}
+                                    >
+                                        {link.label}
+                                    </a>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 }

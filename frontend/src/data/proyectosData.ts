@@ -93,7 +93,7 @@ export const proyectosData: Proyecto[] = [
         slug: 'consorcio-del-desierto',
         numero: '04',
         nombre: 'CONSORCIO DEL DESIERTO',
-        logo: `${base}/images/consorciodeldesierto-logo.jpg`,
+        logo: `${base}images/consorciodeldesierto-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',

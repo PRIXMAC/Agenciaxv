@@ -29,10 +29,10 @@ function Hero() {
                             <img src={`${import.meta.env.BASE_URL}images/card-amarilla.jpg`} alt="" />
                         </div>
                         <div className="card-white">
-                            <img src={`${import.meta.env.BASE_URL}/images/card-blanca.jpg`} alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/card-blanca.jpg`} alt="" />
                         </div>
                         <div className="card-orange">
-                            <img src={`${import.meta.env.BASE_URL}/images/card-naranja.jpg`} alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/card-naranja.jpg`} alt="" />
                         </div>
                     </div>
                 </div>
