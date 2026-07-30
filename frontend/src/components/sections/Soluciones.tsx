@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import SectionTag from '../ui/SectionTag'
+import ModalCorreo from '../ui/ModalCorreo'
 
 const soluciones = [
     {
@@ -22,6 +24,8 @@ const soluciones = [
 ]
 
 function Soluciones() {
+    const [modalAbierto, setModalAbierto] = useState(false)
+
     return (
         <section id="soluciones" className="soluciones">
             <div className="container">
@@ -47,11 +51,21 @@ function Soluciones() {
                 </div>
 
                 <div className="soluciones-accion">
-                    <a href="#contacto" className="btn-soluciones">
+                    <button
+                        type="button"
+                        className="btn-soluciones"
+                        onClick={() => setModalAbierto(true)}
+                    >
                         Consultar
-                    </a>
+                    </button>
                 </div>
             </div>
+
+            <ModalCorreo
+                correo="agencia.decimoquinta@gmail.com"
+                abierto={modalAbierto}
+                onCerrar={() => setModalAbierto(false)}
+            />
         </section>
     )
 }

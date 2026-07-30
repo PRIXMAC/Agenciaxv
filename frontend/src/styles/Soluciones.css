@@ -78,23 +78,20 @@
 }
 
 .btn-soluciones {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 210px;
-    padding: 14px 28px;
+    display: inline-block;
+    margin-top: 35px;
+    padding: 15px 35px;
+    border: none;
     border-radius: var(--radius-pill);
     background: var(--primary);
-    font-family: var(--heading);
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-transform: uppercase;
     color: var(--white);
-    transition: background 0.3s, transform 0.3s;
+    font-family: var(--heading);
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .btn-soluciones:hover {
-    background: var(--primary-dark);
-    color: var(--white);
-    transform: translateY(-3px);
+    background: #d64a1d;
 }
