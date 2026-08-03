@@ -40,29 +40,18 @@
 
 .equipo-item {
     display: grid;
-    grid-template-columns: 190px 1fr;
     gap: 28px;
     align-items: center;
 }
 
-.equipo-foto {
-    width: 190px;
-    aspect-ratio: 190 / 230;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    background: #f3f3f3;
-    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.16);
-}
 
-.equipo-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.equipo-info {
+    text-align: center;
 }
 
 .equipo-info h3 {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 1;
     color: var(--black);
@@ -82,7 +71,8 @@
 
 .equipo-info p {
     max-width: 360px;
-    margin: 0;
+    margin: 0 auto;
+    text-align: justify;
     font-size: 0.9rem;
     line-height: 1.45;
     color: #1d1d1d;

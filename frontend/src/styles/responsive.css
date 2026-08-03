@@ -161,16 +161,6 @@
         gap: 40px;
     }
 
-    .equipo-item {
-        grid-template-columns: 160px 1fr;
-        gap: 24px;
-    }
-
-    .equipo-foto {
-        width: 160px;
-        aspect-ratio: 160 / 200;
-    }
-
     /* FOOTER */
     .footer-inner {
         gap: 30px;
@@ -286,14 +276,7 @@
     }
 
     .equipo-item {
-        grid-template-columns: 1fr;
         text-align: center;
-    }
-
-    .equipo-foto {
-        width: min(200px, 100%);
-        aspect-ratio: 200 / 240;
-        margin: 0 auto;
     }
 
     .equipo-info p {
