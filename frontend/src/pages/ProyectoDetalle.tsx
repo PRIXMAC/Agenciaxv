@@ -62,7 +62,7 @@ function ProyectoDetalle(){
                     </article>
 
                     <article className="pd-detalle-card">
-                        <h3>NOMBRE</h3>
+                        <h3>SERVICIOS ENTREGADOS</h3>
                         <p>{proyecto.nombreTexto}</p>
                     </article>
                 </div>
