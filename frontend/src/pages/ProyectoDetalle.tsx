@@ -86,7 +86,7 @@ function ProyectoDetalle(){
                     </div>
                 </div>
 
-                {proyecto.aplicaciones.filter((app) => app.color !== 'negro' && app.color !== 'naranjo').map((app, i) => (
+                {proyecto.aplicaciones.filter((app) => app.color === 'amarillo').map((app, i) => (
                     <div key={i} className="pd-aplicacion-bloque">
                         <h4>{app.titulo}</h4>
                         <p>{app.texto}</p>

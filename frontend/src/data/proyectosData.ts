@@ -40,7 +40,7 @@ export const proyectosData: Proyecto[] = [
         nombreTexto:
             'Creación de naming, identidad visual, diseño de etiquetas, folletos informativos y el desarrollo del Manual Técnico de Normas.',
         aplicacionesImagen:`${base}images/Bioconcordia-2.jpg`,
-            aplicaciones: [
+        aplicaciones: [
             { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
         ],
     },
@@ -61,8 +61,9 @@ export const proyectosData: Proyecto[] = [
         
         nombreTexto:
             ' Creación de naming, diseño de identidad visual corporativa, diseño de packaging, etiquetado de productos y diseño web.',
+        aplicacionesImagen:`${base}images/Sustancial-2.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/Sustancial-2.jpg`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
         ],
     },
     {
@@ -81,8 +82,9 @@ export const proyectosData: Proyecto[] = [
             ' Estructurar la identidad visual de la línea de productos y generar las herramientas corporativas necesarias para la correcta instrucción de uso técnico.',
         nombreTexto:
             'Creación de naming, diseño de identidad visual, manual de normas gráficas, diseño corporativo (folleto informativo) y diseño de etiqueta para el producto.',
+        aplicacionesImagen:`${base}images/All-in-Pacha-2.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/All-in-Pacha-2.jpg`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
         ],
     },
     {
@@ -101,8 +103,9 @@ export const proyectosData: Proyecto[] = [
             'Carencia de directrices visuales estructuradas y de un manual de normas gráficas, lo que le dificulta mantener la coherencia corporativa y ejecutar una gestión profesional de sus canales digitales.',
         nombreTexto:
             'Diseño de manual de normas gráficas, presentaciones corporativas, piezas gráficas para redes sociales y edición audiovisual (reels y videos).',
+        aplicacionesImagen:`${base}images/Consorcio-del-Desierto-3.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/Consorcio-del-Desierto-2.jpg`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
         ],
     },
     {
@@ -121,8 +124,9 @@ export const proyectosData: Proyecto[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        aplicacionesImagen:`${base}images/Tecno-Ambiente-1.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/`, color: 'amarillo' },
         ],
     },
     {
