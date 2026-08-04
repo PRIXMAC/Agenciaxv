@@ -35,7 +35,7 @@ export const proyectosData: Proyecto[] = [
             'BioConcordia nació como respuesta a la necesidad de construir una marca potente y recordable para un producto agrícola innovador, capaz de ser reconocido en el rubro de los insumos agrícolas.',
         resumenImagen: `${base}images/Bioconcordia 1.jpg`,
         desafioTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Necesidad de estructurar la marca no solo para su comercialización agrícola, sino para cumplir con las estrictas exigencias legales de registro de propiedad intelectual.',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
@@ -54,10 +54,10 @@ export const proyectosData: Proyecto[] = [
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+            'Empresa perteneciente al Consorcio del Desierto, dedicada a la fabricación de bioinsumos 100% orgánicos, libres de agentes químicos, pesticidas y plaguicidas, para la potenciación del suelo agrícola.',
         resumenImagen: `${base}images/Sustancial-1.jpg`,
         desafioTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Necesidad de desarrollar una marca propia desde cero, requiriendo un nuevo nombre, identidad visual y soportes para su comercialización y distribución.',
         
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -77,10 +77,10 @@ export const proyectosData: Proyecto[] = [
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+            ' Marca de bioinsumos generada por Sustancial, enfocada específicamente en el desarrollo de acelerantes orgánicos para suelos agrícolas.',
         resumenImagen: `${base}images/All-in-Pacha-1.jpg`,
         desafioTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            ' Estructurar la identidad visual de la línea de productos y generar las herramientas corporativas necesarias para la correcta instrucción de uso técnico.',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
@@ -92,17 +92,17 @@ export const proyectosData: Proyecto[] = [
     {
         slug: 'consorcio-del-desierto',
         numero: '04',
-        nombre: 'CONSORCIO DEL DESIERTO',
+        nombre: 'Concorcio del Desierto',
         logo: `${base}images/consorciodeldesierto-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
         resumenTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+            'Organización articuladora de innovación tecnológica y desarrollo agrícola en entornos áridos, respaldada por Corfo y Codesser.',
         resumenImagen: `${base}images/Consorcio-del-Desierto-1.jpg`,
         desafioTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Carencia de directrices visuales estructuradas y de un manual de normas gráficas, lo que le dificulta mantener la coherencia corporativa y ejecutar una gestión profesional de sus canales digitales.',
         nombreTexto:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [

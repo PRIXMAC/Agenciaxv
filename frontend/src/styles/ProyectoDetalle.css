@@ -91,6 +91,10 @@
     background: #e4e4e4;
 }
 
+.pd-resumen-imagen--sustancial {
+    aspect-ratio: 3 / 2;
+}
+
 .pd-resumen-imagen img {
     width: 100%;
     height: 100%;

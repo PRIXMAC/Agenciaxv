@@ -46,7 +46,7 @@ function ProyectoDetalle(){
                         <h2>{proyecto.resumenTitulo}</h2>
                         <p>{proyecto.resumenTexto}</p>
                     </div>
-                    <div className="pd-resumen-imagen">
+                    <div className={`pd-resumen-imagen${proyecto.slug === 'sustancial' ? ' pd-resumen-imagen--sustancial' : ''}`}>
                         {proyecto.resumenImagen && (
                             <img src={proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`}/>
                         )}
@@ -57,7 +57,7 @@ function ProyectoDetalle(){
             <div id= "sistema" className="pd-detalles">
                 <div className="container pd-detalles-grid">
                     <article className="pd-detalle-card">
-                        <h3>EL DESAFÍO</h3>
+                        <h3>DESAFÍO</h3>
                         <p>{proyecto.desafioTexto}</p>
                     </article>
 
