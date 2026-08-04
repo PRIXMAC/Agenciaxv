@@ -69,17 +69,24 @@ function ProyectoDetalle(){
             </div>
 
             <div id="aplicaciones" className="pd-aplicaciones container">
-                <span className="section-tag-proyecto">APLICACIONES</span>
-                <h2>UNA IDENTIDAD PARA 
-                    <br />
-                    DISTINTOS SOPORTES.</h2>
-                <p>
-                    El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y
-                    piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y
-                    polera corporativa.
-                </p>
+                <div className="pd-aplicaciones-header">
+                    <div className="pd-aplicaciones-texto">
+                        <span className="section-tag-proyecto">APLICACIONES</span>
+                        <h2>UNA IDENTIDAD PARA 
+                            <br />
+                            DISTINTOS SOPORTES.</h2>
+                        <p>
+                            El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y
+                            piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y
+                            polera corporativa.
+                        </p>
+                    </div>
+                    <div className="pd-aplicaciones-imagen">
+                        <img src={proyecto.aplicacionesImagen ?? proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`} />
+                    </div>
+                </div>
 
-                {proyecto.aplicaciones.map((app, i) => (
+                {proyecto.aplicaciones.filter((app) => app.color !== 'negro' && app.color !== 'naranjo').map((app, i) => (
                     <div key={i} className="pd-aplicacion-bloque">
                         <h4>{app.titulo}</h4>
                         <p>{app.texto}</p>

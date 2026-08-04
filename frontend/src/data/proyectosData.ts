@@ -11,12 +11,13 @@ export interface Proyecto {
     resumenTitulo: string
     resumenTexto: string
     resumenImagen: string
+    aplicacionesImagen?: string
     desafioTexto: string
     nombreTexto: string
     aplicaciones: {
         titulo: string
         texto: string
-        color: 'amarillo' | 'negro' | 'naranjo'
+        color: 'amarillo' 
         imagen?: string
     }[]
 }
@@ -38,10 +39,9 @@ export const proyectosData: Proyecto[] = [
             'Necesidad de estructurar la marca no solo para su comercialización agrícola, sino para cumplir con las estrictas exigencias legales de registro de propiedad intelectual.',
         nombreTexto:
             'Creación de naming, identidad visual, diseño de etiquetas, folletos informativos y el desarrollo del Manual Técnico de Normas.',
-        aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/Bioconcordia-2.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Mockups y piezas visuales pensadas para comunicar presencia y consistencia de marca.', imagen: `${base}images/aplicacion-negro.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
+        aplicacionesImagen:`${base}images/Bioconcordia-2.jpg`,
+            aplicaciones: [
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
         ],
     },
     {
@@ -63,8 +63,6 @@ export const proyectosData: Proyecto[] = [
             ' Creación de naming, diseño de identidad visual corporativa, diseño de packaging, etiquetado de productos y diseño web.',
         aplicaciones: [
             { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/Sustancial-2.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-negro.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
         ],
     },
     {
@@ -84,9 +82,7 @@ export const proyectosData: Proyecto[] = [
         nombreTexto:
             'Creación de naming, diseño de identidad visual, manual de normas gráficas, diseño corporativo (folleto informativo) y diseño de etiqueta para el producto.',
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/All-in-Pacha-2.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-negro.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/All-in-Pacha-2.jpg`, color: 'amarillo' },
         ],
     },
     {
@@ -106,9 +102,7 @@ export const proyectosData: Proyecto[] = [
         nombreTexto:
             'Diseño de manual de normas gráficas, presentaciones corporativas, piezas gráficas para redes sociales y edición audiovisual (reels y videos).',
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/Consorcio-del-Desierto-2.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/Consorcio-del-Desierto-3.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/Consorcio-del-Desierto-2.jpg`, color: 'amarillo' },
         ],
     },
     {
@@ -129,8 +123,6 @@ export const proyectosData: Proyecto[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
             { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-negro.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
         ],
     },
     {
@@ -151,8 +143,6 @@ export const proyectosData: Proyecto[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
             { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-negro.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
         ],
     },
     {
@@ -173,8 +163,6 @@ export const proyectosData: Proyecto[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
             { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-negro.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
         ],
     },
     {
@@ -195,8 +183,6 @@ export const proyectosData: Proyecto[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         aplicaciones: [
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
-            { titulo: 'APLICACIONES', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-negro.jpg`, color: 'negro' },
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-naranja.jpg`, color: 'naranjo' },
         ],
     },
 ] 
