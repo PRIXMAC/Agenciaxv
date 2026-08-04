@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirigiendo...</title>
+    <script>
+      (function () {
+        var base = '/Agenciaxv/';
+        var path = window.location.pathname;
+        if (path.indexOf(base) === 0) {
+          var rel = path.slice(base.length).replace(/\/+$/, '');
+          if (rel) {
+            sessionStorage.setItem('redirect', rel);
+          }
+        }
+        window.location.replace(base + 'index.html');
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
