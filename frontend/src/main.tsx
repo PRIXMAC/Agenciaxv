@@ -7,6 +7,12 @@ import App from './App'
 
 const basename = import.meta.env.PROD ? '/Agenciaxv' : ''
 
+const redirect = sessionStorage.getItem('redirect')
+if (redirect) {
+    sessionStorage.removeItem('redirect')
+    window.history.replaceState(null, '', basename + '/' + redirect)
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename={basename}>

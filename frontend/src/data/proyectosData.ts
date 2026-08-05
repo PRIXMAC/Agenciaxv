@@ -41,7 +41,7 @@ export const proyectosData: Proyecto[] = [
             'Creación de naming, identidad visual, diseño de etiquetas, folletos informativos y el desarrollo del Manual Técnico de Normas.',
         aplicacionesImagen:`${base}images/Bioconcordia-2.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/BioConcordia.jpg`, color: 'amarillo' },
         ],
     },
     {
@@ -63,7 +63,7 @@ export const proyectosData: Proyecto[] = [
             ' Creación de naming, diseño de identidad visual corporativa, diseño de packaging, etiquetado de productos y diseño web.',
         aplicacionesImagen:`${base}images/Sustancial-2.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/Sustancial.jpg`, color: 'amarillo' },
         ],
     },
     {
@@ -84,7 +84,7 @@ export const proyectosData: Proyecto[] = [
             'Creación de naming, diseño de identidad visual, manual de normas gráficas, diseño corporativo (folleto informativo) y diseño de etiqueta para el producto.',
         aplicacionesImagen:`${base}images/All-in-Pacha-2.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/All-in Pacha.jpg`, color: 'amarillo' },
         ],
     },
     {
@@ -105,7 +105,7 @@ export const proyectosData: Proyecto[] = [
             'Diseño de manual de normas gráficas, presentaciones corporativas, piezas gráficas para redes sociales y edición audiovisual (reels y videos).',
         aplicacionesImagen:`${base}images/Consorcio-del-Desierto-3.jpg`,
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/Consorcio del Desierto.jpg`, color: 'amarillo' },
         ],
     },
     {
