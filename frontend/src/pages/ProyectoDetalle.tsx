@@ -72,14 +72,8 @@ function ProyectoDetalle(){
                 <div className="pd-aplicaciones-header">
                     <div className="pd-aplicaciones-texto">
                         <span className="section-tag-proyecto">APLICACIONES</span>
-                        <h2>UNA IDENTIDAD PARA 
-                            <br />
-                            DISTINTOS SOPORTES.</h2>
-                        <p>
-                            El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y
-                            piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y
-                            polera corporativa.
-                        </p>
+                        <h2>{proyecto.aplicacionesTitulo}</h2>
+                        <p>{proyecto.aplicacionesTexto}</p>
                     </div>
                     <div className="pd-aplicaciones-imagen">
                         <img src={proyecto.aplicacionesImagen ?? proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`} />
