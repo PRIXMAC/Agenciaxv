@@ -57,9 +57,9 @@ export const proyectosData: Proyecto[] = [
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura / Corporativo',
         entrega: 'Arquitectura de marca y branding',
-        resumenTitulo: 'UN RESPALDO CORPORATIVO PARA LA INNOVACIÓN EN EL AGRO.',
+        resumenTitulo: 'UN RESPALDO CORPORATIVO PARA LA INNOVACIÓN AGRÍCOLA.',
         resumenTexto:
-            'Sustancial se consolida como una entidad matriz vinculada a proyectos de innovación. La marca fue construida para transmitir autoridad, responsabilidad ambiental y confianza institucional.',
+            'Sustancial se consolida como una entidad matriz vinculada a la creación de bioinsumos para la agricultura sustentable. La marca fue construida para transmitir autoridad, responsabilidad ambiental y confianza institucional.',
         resumenImagen: `${base}images/Sustancial-1.jpg`,
         desafioTexto:
             'Crear una marca paraguas capaz de respaldar de manera objetiva productos específicos de su portafolio, manteniendo una coherencia visual impecable y transmitiendo un enfoque tecnológico y sustentable.',
@@ -82,7 +82,7 @@ export const proyectosData: Proyecto[] = [
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura / Insumos',
         entrega: 'Manual de marca, packaging y material técnico',
-        resumenTitulo: 'IDENTIDAD VISUAL PARA UN ACELERANTE AGRÍCULA DE ALTO IMPACTO. ',
+        resumenTitulo: 'IDENTIDAD VISUAL PARA UN ACELERANTE AGRÍCOLA DE ALTO IMPACTO. ',
         resumenTexto:
             'All-in Pacha requirió el desarrollo de una identidad visual robusta orientada a destacar en el mercado de insumos, proyectando su carácter innovador y su base técnica orientada a la sustentabilidad.',
         resumenImagen: `${base}images/All-in-Pacha-1.jpg`,
@@ -149,7 +149,7 @@ export const proyectosData: Proyecto[] = [
     {
         slug: 'proyecto-06',
         numero: '06',
-        nombre: 'PROYECTO 06',
+        nombre: 'PROYECTO ',
         logo: `${base}images/proyecto06-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
@@ -172,7 +172,7 @@ export const proyectosData: Proyecto[] = [
     {
         slug: 'proyecto-07',
         numero: '07',
-        nombre: 'PROYECTO 07',
+        nombre: 'PROYECTO ',
         logo: `${base}images/proyecto07-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
@@ -195,7 +195,7 @@ export const proyectosData: Proyecto[] = [
     {
         slug: 'proyecto-08',
         numero: '08',
-        nombre: 'PROYECTO-08',
+        nombre: 'PROYECTO',
         logo: `${base}images/proyecto08-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Lorem ipsum',
