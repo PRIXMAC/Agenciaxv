@@ -24,7 +24,7 @@ function ProyectoDetalle(){
         <section className="proyecto-detalle">
             <div  id= "contexto" className="pd-hero container">
                 <span className="pd-tagline">{proyecto.tagline}</span>
-                <img className="pd-logo" src={proyecto.logo} alt={proyecto.nombre}/>
+                <img className={`pd-logo${proyecto.slug === 'tecno-ambiente' ? ' pd-logo--small' : ''}`} src={proyecto.logo} alt={proyecto.nombre}/>
 
                 <div className="pd-meta">
                     <span className="pd-meta-item">

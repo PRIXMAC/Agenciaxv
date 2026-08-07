@@ -70,6 +70,10 @@
     transform: translateY(-26px);
 }
 
+.proyecto-item[data-num="05"] .proyecto-bg img {
+    max-height: 120px;
+}
+
 .proyecto-overlay {
     position: absolute;
     inset: 0;

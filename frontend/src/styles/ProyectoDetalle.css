@@ -39,6 +39,10 @@
     margin: 0 auto 35px;
 }
 
+.pd-logo--small {
+    max-width: 520px;
+}
+
 .pd-meta {
     display: flex;
     flex-wrap: wrap;

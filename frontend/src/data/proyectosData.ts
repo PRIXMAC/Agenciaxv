@@ -125,25 +125,25 @@ export const proyectosData: Proyecto[] = [
     {
         slug: 'tecno-ambiente',
         numero: '05',
-        nombre: 'TECNO AMBIENTE',
-        logo: `${base}images/proyecto05-logo.jpg`,
+        nombre: 'Tecno-Ambiente',
+        logo: `${base}images/LOGO TECNO AMBIENTE.svg`,
         tagline: 'Proyecto de identidad visual',
-        industria: 'Lorem ipsum',
-        entrega: 'Manual de marca + aplicaciones',
-        resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
+        industria: 'Consultoría Ambiental / Sustentabilidad',
+        entrega: 'Actualización web y soportes físicos',
+        resumenTitulo: 'ACTUALIZACIÓN DIGITAL Y PRESENCIA VISUAL PARA LA CONSULTORÍA AMBIENTAL.',
         resumenTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+            'Tecno-Ambiente requería una modernización de su plataforma digital y elementos de apoyo presencial para consolidar su posicionamiento como asesores expertos en medio ambiente, facilitando la comunicación objetiva de sus servicios en instancias de capacitación.',
         resumenImagen: `${base}images/Tecno-Ambiente-1.jpg`,
         desafioTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Optimizar la interfaz del sitio web para comunicar de manera eficiente y estructurada los servicios de consultoría, proveyendo en paralelo herramientas visuales físicas que respalden la autoridad técnica de la empresa durante sus charlas y relatorías.',
         nombreTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Actualización de sitio web (arquitectura y diseño de interfaz) y diseño de soportes físicos (pendones corporativos para presentaciones).',
         aplicacionesImagen:`${base}images/Tecno-Ambiente-1.jpg`,
-        aplicacionesTitulo: 'UNA IDENTIDAD PARA DISTINTOS SOPORTES.',
+        aplicacionesTitulo: 'PROYECCIÓN VISUAL: DEL ENTORNO WEB A LA RELATORÍA PRESENCIAL.',
         aplicacionesTexto:
-            'El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y polera corporativa.',
+            'El rediseño se integró en la nueva interfaz del sitio web para mejorar la experiencia de navegación del usuario, y se adaptó a formatos de exhibición física (pendón) para asegurar la legibilidad y presencia de la marca en eventos presenciales.',
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/Tecno-Ambiente-1.jpg`, color: 'amarillo' },
+            { titulo: 'SISTEMA VISUAL', texto: 'Estandarización de los elementos gráficos aplicados tanto a la plataforma digital como a los soportes físicos, asegurando consistencia en la comunicación de la empresa.', imagen: `${base}images/Tecno-Ambiente-1.jpg`, color: 'amarillo' },
         ],
     },
     {
