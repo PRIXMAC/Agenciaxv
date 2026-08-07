@@ -3,7 +3,7 @@ import SectionTag from '../ui/SectionTag'
 const equipo = [
     {
         name: 'MARÍA ASÍS',
-        cargo: 'Diseño Gráfico e Identidad Visual',
+        cargo: 'Dirección Creativa e Identidad Visual',
         profesion: 'Fundadora de Agencia Decimoquinta',
         desc: 'Convierto la visión de tu negocio en una marca profesional y funcional. Te ayudo a construir una identidad visual estratégica que te haga único e identificable, generando coherencia y confianza para conectar con tu cliente ideal.',
     },

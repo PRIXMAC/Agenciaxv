@@ -10,7 +10,7 @@ export interface Proyecto {
     entrega: string
     resumenTitulo: string
     resumenTexto: string
-    resumenImagen: string
+    resumenImagen?: string
     aplicacionesImagen?: string
     aplicacionesTitulo: string
     aplicacionesTexto: string
@@ -108,7 +108,7 @@ export const proyectosData: Proyecto[] = [
         entrega: 'Branding corporativo y manual de normas',
         resumenTitulo: 'IDENTIDAD INSTITUCIONAL PARA EL DESARROLLO AGRÍCOLA REGIONAL.',
         resumenTexto:
-            'Consorcio del Desierto actúa como entidad articuladora de iniciativas sustentables. Su marca fue diseñada para reflejar solidez, liderazgo y un compromiso estructurado con el desarrollo agrícola.',
+            'El Consorcio del Desierto actúa como entidad articuladora de iniciativas sustentables. Su marca fue diseñada para reflejar solidez, liderazgo y un compromiso estructurado con el desarrollo agrícola.',
         resumenImagen: `${base}images/Consorcio-del-Desierto-1.jpg`,
         desafioTexto:
             'Proyectar una imagen de alto estándar corporativo que facilite el relacionamiento estratégico, la articulación con gestores de cooperativas y la validación formal de proyectos en el sector.',
@@ -127,23 +127,22 @@ export const proyectosData: Proyecto[] = [
         numero: '05',
         nombre: 'Tecno-Ambiente',
         logo: `${base}images/LOGO TECNO AMBIENTE.svg`,
-        tagline: 'Proyecto de identidad visual',
+        tagline: 'Proyecto digital y visual',
         industria: 'Consultoría Ambiental / Sustentabilidad',
         entrega: 'Actualización web y soportes físicos',
-        resumenTitulo: 'ACTUALIZACIÓN DIGITAL Y PRESENCIA VISUAL PARA LA CONSULTORÍA AMBIENTAL.',
+        resumenTitulo: 'UNA PLATAFORMA PARA SOLUCIONES CON VISIÓN SOSTENIBLE.',
         resumenTexto:
-            'Tecno-Ambiente requería una modernización de su plataforma digital y elementos de apoyo presencial para consolidar su posicionamiento como asesores expertos en medio ambiente, facilitando la comunicación objetiva de sus servicios en instancias de capacitación.',
-        resumenImagen: `${base}images/Tecno-Ambiente-1.jpg`,
+            ' La actualización visual de TecnoAmbiente surgió como respuesta a la necesidad de construir una presencia digital sólida y estructurada, capaz de reflejar sus 20 años de experiencia técnica en el rubro de la consultoría de gestión ambiental.',
         desafioTexto:
-            'Optimizar la interfaz del sitio web para comunicar de manera eficiente y estructurada los servicios de consultoría, proveyendo en paralelo herramientas visuales físicas que respalden la autoridad técnica de la empresa durante sus charlas y relatorías.',
+            'Estructurar una plataforma digital capaz de comunicar la trayectoria y el rigor de la consultora, desarrollando también soportes presenciales que consoliden su autoridad institucional en instancias B2B y relatorías.',
         nombreTexto:
-            'Actualización de sitio web (arquitectura y diseño de interfaz) y diseño de soportes físicos (pendones corporativos para presentaciones).',
-        aplicacionesImagen:`${base}images/Tecno-Ambiente-1.jpg`,
-        aplicacionesTitulo: 'PROYECCIÓN VISUAL: DEL ENTORNO WEB A LA RELATORÍA PRESENCIAL.',
+            ' Arquitectura de la información y Diseño UX/UI, desarrollo de sitio web corporativo y diseño de soporte físico (Pendones institucionales).',
+        aplicacionesImagen:`${base}images/Tecno-Ambiente-1.png`,
+        aplicacionesTitulo: 'PROYECCIÓN VISUAL: DEL ENTORNO WEB A LA CONSULTORIA PRESENCIAL.',
         aplicacionesTexto:
             'El rediseño se integró en la nueva interfaz del sitio web para mejorar la experiencia de navegación del usuario, y se adaptó a formatos de exhibición física (pendón) para asegurar la legibilidad y presencia de la marca en eventos presenciales.',
         aplicaciones: [
-            { titulo: 'SISTEMA VISUAL', texto: 'Estandarización de los elementos gráficos aplicados tanto a la plataforma digital como a los soportes físicos, asegurando consistencia en la comunicación de la empresa.', imagen: `${base}images/Tecno-Ambiente-1.jpg`, color: 'amarillo' },
+            { titulo: 'SISTEMA VISUAL', texto: 'Estandarización de los elementos gráficos aplicados tanto a la plataforma digital como a los soportes físicos, asegurando consistencia en la comunicación de la empresa.', color: 'amarillo' },
         ],
     },
     {

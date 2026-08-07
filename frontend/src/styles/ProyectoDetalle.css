@@ -40,7 +40,7 @@
 }
 
 .pd-logo--small {
-    max-width: 520px;
+    max-width: 370px;
 }
 
 .pd-meta {
@@ -97,6 +97,10 @@
 
 .pd-resumen-imagen--sustancial {
     aspect-ratio: 3 / 2;
+}
+
+.pd-resumen-texto:only-child {
+    grid-column: 1 / -1;
 }
 
 .pd-resumen-imagen img {
@@ -161,6 +165,9 @@
     height: 100%;
     object-fit: cover;
 }
+.pd-aplicaciones-texto:only-child {
+    grid-column: 1 / -1;
+}
 .pd-aplicaciones h2 {
     margin-block: 12px 16px;
     font-size: clamp(1.8rem, 3vw, 3.4rem);
@@ -201,12 +208,6 @@
     line-height: 1.5;
     font-family: var(--handing);
 }
-.pd-caja-placeholder {
-    width: 56px;
-    height: 56px;
-    opacity: 0.35;
-}
-
 .pd-aplicacion-caja {
     border-radius: var(--radius-lg);
     aspect-ratio: 12 / 3;

@@ -46,11 +46,11 @@ function ProyectoDetalle(){
                         <h2>{proyecto.resumenTitulo}</h2>
                         <p>{proyecto.resumenTexto}</p>
                     </div>
-                    <div className={`pd-resumen-imagen${proyecto.slug === 'sustancial' ? ' pd-resumen-imagen--sustancial' : ''}`}>
-                        {proyecto.resumenImagen && (
+                    {proyecto.resumenImagen && (
+                        <div className={`pd-resumen-imagen${proyecto.slug === 'sustancial' ? ' pd-resumen-imagen--sustancial' : ''}`}>
                             <img src={proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`}/>
-                        )}
-                    </div>
+                        </div>
+                    )}
                 </div>
             </div>
 
@@ -75,22 +75,22 @@ function ProyectoDetalle(){
                         <h2>{proyecto.aplicacionesTitulo}</h2>
                         <p>{proyecto.aplicacionesTexto}</p>
                     </div>
-                    <div className="pd-aplicaciones-imagen">
-                        <img src={proyecto.aplicacionesImagen ?? proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`} />
-                    </div>
+                    {(proyecto.aplicacionesImagen ?? proyecto.resumenImagen) && (
+                        <div className="pd-aplicaciones-imagen">
+                            <img src={proyecto.aplicacionesImagen ?? proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`} />
+                        </div>
+                    )}
                 </div>
 
                 {proyecto.aplicaciones.filter((app) => app.color === 'amarillo').map((app, i) => (
                     <div key={i} className="pd-aplicacion-bloque">
                         <h4>{app.titulo}</h4>
                         <p>{app.texto}</p>
-                        <div className={`pd-aplicacion-caja pd-caja-${app.color}`}>
-                            {app.imagen ? (
+                        {app.imagen && (
+                            <div className={`pd-aplicacion-caja pd-caja-${app.color}`}>
                                 <img src={app.imagen} alt={app.titulo} />
-                            ) : (
-                                <span className="pd-caja-placeholder" aria-hidden="true" />
-                            )}
-                        </div>
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>
