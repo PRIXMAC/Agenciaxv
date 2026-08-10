@@ -36,14 +36,28 @@
 }
 
 .solucion-card {
+    position: relative;
     flex: 1;
-    padding: 34px;
-    border-radius: var(--radius-lg);
-    background: var(--white);
+    aspect-ratio: 4 / 3;
+    padding: 24px 33px;
+    border-radius: 24px;
+    background: var(--light);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+
+.solucion-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 0;
 }
 
 .solucion-card:hover {
@@ -52,35 +66,38 @@
 }
 
 .solucion-contenido {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
 .solucion-card h3 {
-    margin-bottom: 18px;
-    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-size: 1.7rem;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.2;
     text-transform: uppercase;
-    color: var(--black);
+    color: rgb(214, 212, 212);
 }
 
 /* Estilos para la lista de viñetas */
 .solucion-lista {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 0;
     flex: 1;
 }
 
 .solucion-lista li {
     position: relative;
     padding-left: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    font-weight: 500;
     font-size: 0.9rem;
-    line-height: 1.55;
-    color: #333;
+    line-height: 1.5;
+    color: #eee7e7;
 }
 
 .solucion-lista li::before {
@@ -98,15 +115,15 @@
 
 /* Estilos opcionales para viñetas de diferente color por tarjeta */
 .solucion-card-uno .solucion-lista li::before {
-    color: #000000; /* pack black */
+    color: #f7f4f4; /* pack black */
 }
 
 .solucion-card-tres .solucion-lista li::before {
-    color: #000000; /* pack white*/
+    color: #f7f4f4; /* pack white*/
 }
 
 .solucion-card-dos .solucion-lista li::before {
-    color: #000000; /* pack gold */
+    color: #f7f4f4; /* pack gold */
 }
 
 .soluciones-accion {
@@ -139,11 +156,11 @@
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .solucion-card {
         padding: 24px;
     }
-    
+
     .soluciones-encabezado {
         margin-bottom: 40px;
     }

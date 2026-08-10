@@ -1,15 +1,19 @@
 import SectionTag from '../ui/SectionTag'
 
+const base = import.meta.env.BASE_URL;
+
 const equipo = [
     {
         name: 'MARÍA ASÍS',
         cargo: 'Dirección Creativa e Identidad Visual',
         profesion: 'Fundadora de Agencia Decimoquinta',
+        img: `${base}images/foto_perfil/maria.png`,
     },
     {
         name: 'CAMILO PINEDA',
         cargo: 'Gestión de proyectos creativos y Marketing digital',
         profesion: 'Co-Fundador de Agencia Decimoquinta',
+        img: `${base}images/foto_perfil/camilo.png`,
     },
 ]
 
@@ -33,6 +37,9 @@ function Nosotros() {
                 <div className="equipo-grid">
                     {equipo.map((persona) => (
                         <div key={persona.name} className="equipo-item">
+                            <div className="equipo-foto">
+                                <img src={persona.img} alt={`Foto de ${persona.name}`} />
+                            </div>
                             <div className="equipo-info">
                                 <h3>{persona.name}</h3>
                                 <br />

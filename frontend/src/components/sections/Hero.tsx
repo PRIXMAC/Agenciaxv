@@ -18,23 +18,23 @@ function Hero() {
                             <span className="text-orange">ESTRATEGIA</span>
                         </h1>
                         <p className="hero-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  
-                            utlabore et dolore magna aliqua. 
+                            Estructuramos la presencia de tu marca mediante diseño gráfico, plataformas web y redes sociales. 
+                            Traducimos tus objetivos comerciales en una comunicación visual clara y directa.
                         </p>
                         <BotonAgenda className="hero-button">
-                            Agenda reuniónn
+                            Agenda reunión
                         </BotonAgenda>
                     </div>
 
                     <div className="hero-cards">
                         <div className="card-yellow">
-                            <img src={`${import.meta.env.BASE_URL}images/card-amarilla.jpg`} alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/imagenes_hero_servicios/aplicacion-amarilla.jpg`} alt="" />
                         </div>
                         <div className="card-white">
-                            <img src={`${import.meta.env.BASE_URL}images/card-blanca.jpg`} alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/imagenes_hero_servicios/aplicacion-negro.jpg`} alt="" />
                         </div>
                         <div className="card-orange">
-                            <img src={`${import.meta.env.BASE_URL}images/card-naranja.jpg`} alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/imagenes_hero_servicios/aplicacion-naranja.jpg`} alt="" />
                         </div>
                     </div>
                 </div>

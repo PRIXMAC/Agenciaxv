@@ -108,12 +108,6 @@
     color: var(--primary);
 }
 
-.proyecto-contenido {
-    position: absolute;
-    inset: auto 18px 34px 18px;
-    z-index: 2;
-}
-
 .proyecto-active .proyecto-bg img {
     opacity: 1;
 }
@@ -135,12 +129,4 @@
 
 .proyecto-active .proyecto-numero {
     color: var(--primary);
-}
-
-.proyecto-active .proyecto-contenido h3 {
-    color: var(--black);
-}
-
-.proyecto-active .proyecto-contenido p {
-    color: #333;
 }

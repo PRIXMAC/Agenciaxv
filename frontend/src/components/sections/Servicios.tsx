@@ -7,19 +7,19 @@ const servicios = [
     title: 'BRANDING\nESTRATÉGICO',
     description:
       'Construimos identidades visuales coherentes, memorables y alineadas con los objetivos de cada marca.',
-    img: `${base}images/card-blanca.jpg`,
+    img: `${base}images/imagenes_hero_servicios/aplicacion-negro.jpg`,
   },
   {
     title: 'DISEÑO WEB',
     description:
       'Diseñamos experiencias digitales funcionales, modernas y adaptadas a computadores y dispositivos móviles.',
-    img: `${base}images/card-amarilla.jpg`,
+    img: `${base}images/imagenes_hero_servicios/aplicacion-amarilla.jpg`,
   },
   {
     title: 'COMUNICACIÓN\nVISUAL',
     description:
       'Creamos piezas gráficas capaces de comunicar ideas, fortalecer la identidad y conectar con el público.',
-    img: `${base}images/card-naranja.jpg`,
+    img: `${base}images/imagenes_hero_servicios/aplicacion-naranja.jpg`,
   },
 ]
 

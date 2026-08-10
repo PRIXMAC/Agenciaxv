@@ -19,7 +19,7 @@ function Problema() {
                     </h2>
                     <p className="problema-text">
                         Muchas empresas tienen un servicio sobresaliente, pero proyectan
-                        una identidad genérica o desactualizada. En D&eacute;cimoquinta
+                        una identidad genérica o desactualizada. En Decimoquinta
                         construimos activos comerciales funcionales y memorables.
                     </p>
                 </div>

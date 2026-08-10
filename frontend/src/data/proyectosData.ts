@@ -12,8 +12,8 @@ export interface Proyecto {
     resumenTexto: string
     resumenImagen?: string
     aplicacionesImagen?: string
-    aplicacionesTitulo: string
-    aplicacionesTexto: string
+    aplicacionesTitulo?: string
+    aplicacionesTexto?: string
     desafioTexto: string
     nombreTexto: string
     aplicaciones: {
@@ -29,19 +29,19 @@ export const proyectosData: Proyecto[] = [
         slug: 'bioconcordia',
         numero: '01',
         nombre: 'BioConcordia',
-        logo: `${base}images/bioconcordia-logo.jpg`,
+        logo: `${base}images/logos_proyectos/bioconcordia-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: 'Manual de marca + aplicaciones',
         resumenTitulo: 'UNA MARCA PARA UNA SOLUCIÓN CON VISIÓN SUSTENTABLE.',
         resumenTexto:
             'BioConcordia nació como respuesta a la necesidad de construir una marca potente y recordable para un producto agrícola innovador, capaz de ser reconocido en el rubro de los insumos agrícolas.',
-        resumenImagen: `${base}images/Bioconcordia 1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/Bioconcordia 1.jpg`,
         desafioTexto:
             'Necesidad de estructurar la marca no solo para su comercialización agrícola, sino para cumplir con las estrictas exigencias legales de registro de propiedad intelectual.',
         nombreTexto:
             'Creación de naming, identidad visual, diseño de etiquetas, folletos informativos y el desarrollo del Manual Técnico de Normas.',
-        aplicacionesImagen:`${base}images/Bioconcordia-2.jpg`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Bioconcordia-2.jpg`,
         aplicacionesTitulo: 'UNA IDENTIDAD PARA DISTINTOS SOPORTES.',
         aplicacionesTexto:
             'El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y polera corporativa.',
@@ -53,20 +53,20 @@ export const proyectosData: Proyecto[] = [
         slug: 'sustancial',
         numero: '02',
         nombre: 'Sustancial',
-        logo:  `${base}images/sustancial-logo.jpg` ,
+        logo:  `${base}images/logos_proyectos/sustancial-logo.jpg` ,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura / Corporativo',
         entrega: 'Arquitectura de marca y branding',
         resumenTitulo: 'UN RESPALDO CORPORATIVO PARA LA INNOVACIÓN AGRÍCOLA.',
         resumenTexto:
             'Sustancial se consolida como una entidad matriz vinculada a la creación de bioinsumos para la agricultura sustentable. La marca fue construida para transmitir autoridad, responsabilidad ambiental y confianza institucional.',
-        resumenImagen: `${base}images/Sustancial-1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/Sustancial-1.jpg`,
         desafioTexto:
             'Crear una marca paraguas capaz de respaldar de manera objetiva productos específicos de su portafolio, manteniendo una coherencia visual impecable y transmitiendo un enfoque tecnológico y sustentable.',
         
         nombreTexto:
             'Diseño de identidad corporativa, estructuración de arquitectura de marca y definición de lineamientos visuales estratégicos.',
-        aplicacionesImagen:`${base}images/Sustancial-2.jpg`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Sustancial-2.jpg`,
         aplicacionesTitulo: 'COHERENCIA VISUAL PARA EL ECOSISTEMA DE PRODUCTOS.',
         aplicacionesTexto:
             'El desarrollo incluye aplicaciones en soportes corporativos, firmas digitales, documentación técnica y elementos de respaldo para sus productos derivados.',
@@ -78,19 +78,19 @@ export const proyectosData: Proyecto[] = [
         slug: 'all-in-pacha',
         numero: '03',
         nombre: 'All-in Pacha',
-        logo: `${base}images/allinpacha-logo.jpg`,
+        logo: `${base}images/logos_proyectos/allinpacha-logo.jpg`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura / Insumos',
         entrega: 'Manual de marca, packaging y material técnico',
         resumenTitulo: 'IDENTIDAD VISUAL PARA UN ACELERANTE AGRÍCOLA DE ALTO IMPACTO. ',
         resumenTexto:
             'All-in Pacha requirió el desarrollo de una identidad visual robusta orientada a destacar en el mercado de insumos, proyectando su carácter innovador y su base técnica orientada a la sustentabilidad.',
-        resumenImagen: `${base}images/All-in-Pacha-1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/All-in-Pacha-1.jpg`,
         desafioTexto:
             'Necesidad de estructurar una marca comercialmente competitiva y, de forma paralela, desarrollar herramientas técnicas de educación para el usuario final que cumplan con los estándares del sector.',
         nombreTexto:
             'Creación de identidad visual, diseño de packaging, diseño de folletería promocional de alto tiraje y desarrollo editorial del Manual de Compostaje.',
-        aplicacionesImagen:`${base}images/All-in-Pacha-2.jpg`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/All-in-Pacha-2.jpg`,
         aplicacionesTitulo: 'ADAPTABILIDAD PARA EMPAQUES Y MATERIAL EDUCATIVO.',
         aplicacionesTexto:
             'El sistema gráfico se implementó en los envases finales del producto, material impreso promocional para exposición en ferias especializadas del rubro y documentos técnicos.',
@@ -102,22 +102,18 @@ export const proyectosData: Proyecto[] = [
         slug: 'consorcio-del-desierto',
         numero: '04',
         nombre: 'Consorcio del Desierto',
-        logo: `${base}images/consorciodeldesierto-logo.jpg`,
+        logo: `${base}images/logos_proyectos/consorciodeldesierto-logo.jpg`,
         tagline: 'Proyecto de Comunicación digital ',
         industria: 'Agricultura / Corporativo',
         entrega: 'Branding corporativo, manual de normas y RRSS',
         resumenTitulo: 'IDENTIDAD INSTITUCIONAL PARA EL DESARROLLO AGRÍCOLA REGIONAL.',
         resumenTexto:
             'El Consorcio del Desierto actúa como entidad articuladora de iniciativas sustentables. Su marca fue diseñada para reflejar solidez, liderazgo y un compromiso estructurado con el desarrollo agrícola.',
-        resumenImagen: `${base}images/Consorcio-del-Desierto-1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/Consorcio-del-Desierto-1.jpg`,
         desafioTexto:
             'Proyectar una imagen de alto estándar corporativo que facilite el relacionamiento estratégico, la articulación con gestores de cooperativas y la validación formal de proyectos en el sector.',
         nombreTexto:
             'Creación de identidad corporativa, desarrollo de aplicaciones institucionales y Manual Técnico de Normas.',
-        aplicacionesImagen:`${base}images/Consorcio-del-Desierto-3.jpg`,
-        aplicacionesTitulo: 'PRESENCIA CORPORATIVA SÓLIDA Y COHERENTE',
-        aplicacionesTexto:
-            'El sistema contempla aplicaciones en papelería institucional, formatos de presentaciones formales y soportes para la comunicación corporativa.',
         aplicaciones: [
             { titulo: 'LINEAMIENTO DE IDENTIDAD VISUAL', texto: 'Directrices corporativas para mantener la formalidad, los colores institucionales y la correcta convivencia de la marca.', imagen: `${base}images/ConsorciodelDesierto.jpg`, color: 'amarillo' },
         ],
@@ -126,7 +122,7 @@ export const proyectosData: Proyecto[] = [
         slug: 'tecno-ambiente',
         numero: '05',
         nombre: 'Tecno-Ambiente',
-        logo: `${base}images/LOGO TECNO AMBIENTE.svg`,
+        logo: `${base}images/logos_proyectos/LOGO TECNO AMBIENTE.svg`,
         tagline: 'Proyecto digital y visual',
         industria: 'Consultoría Ambiental / Sustentabilidad',
         entrega: 'Actualización web y soportes físicos',
@@ -137,7 +133,7 @@ export const proyectosData: Proyecto[] = [
             'Estructurar una plataforma digital capaz de comunicar la trayectoria y el rigor de la consultora, desarrollando también soportes presenciales que consoliden su autoridad institucional en instancias B2B y relatorías.',
         nombreTexto:
             ' Arquitectura de la información y Diseño UX/UI, desarrollo de sitio web corporativo y diseño de soporte físico (Pendones institucionales).',
-        aplicacionesImagen:`${base}images/Tecno-Ambiente-1.png`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Tecno-Ambiente-1.png`,
         aplicacionesTitulo: 'PROYECCIÓN VISUAL: DEL ENTORNO WEB A LA CONSULTORIA PRESENCIAL.',
         aplicacionesTexto:
             'El rediseño se integró en la nueva interfaz del sitio web para mejorar la experiencia de navegación del usuario, y se adaptó a formatos de exhibición física (pendón) para asegurar la legibilidad y presencia de la marca en eventos presenciales.',
@@ -148,24 +144,25 @@ export const proyectosData: Proyecto[] = [
     {
         slug: 'proyecto-06',
         numero: '06',
-        nombre: 'PROYECTO ',
-        logo: `${base}images/proyecto06-logo.jpg`,
+        nombre: 'Manual de Compostaje para las zonas áridas de Chile ',
+        logo: `${base}images/imagenes_proyectos/image.png`,
         tagline: 'Proyecto de identidad visual',
-        industria: 'Lorem ipsum',
-        entrega: 'Manual de marca + aplicaciones',
-        resumenTitulo: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING',
+        industria: 'Agricultura',
+        entrega: ' Diseño editorial ',
+        resumenTitulo: ' DISEÑO EDITORIAL PARA LA TRANSFERENCIA DE CONOCIMIENTO AGRÍCOLA.',
         resumenTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        resumenImagen: `${base}images/allinpacha-mockup.png`,
+            ' El proyecto consistió en la estructuración visual y diagramación de un manual especializado en procesos de compostaje adaptados a las condiciones climáticas de la región, específicamente, en las zonas áridas del norte de Chile. El objetivo central fue facilitar la lectura y aplicación de procedimientos técnicos en terreno.',
+        resumenImagen: ``,
         desafioTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            ' Jerarquizar y organizar información técnica, métricas y metodologías agronómicas en un formato visualmente claro para el público del sector agrícola. Requirió equilibrar el rigor científico del contenido con una diseño de lectura que resultara funcional y accesible para el usuario final.',
         nombreTexto:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        aplicacionesTitulo: 'UNA IDENTIDAD PARA DISTINTOS SOPORTES.',
+            ' Diseño editorial, edición de imágenes, diagramación de tablas de datos y estructuración visual para formatos para su distribución física y digital.',
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Consorcio-del-Desierto-3.jpg`,
+        aplicacionesTitulo: ' ESTRUCTURA VISUAL AL SERVICIO DE LA INFORMACIÓN TÉCNICA.',
         aplicacionesTexto:
-            'El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y polera corporativa.',
+            'El desarrollo editorial se estructuró para facilitar la lectura de contenidos científicos y metodológicos, abarcando módulos complejos sobre los desafíos ambientales en zonas hiper-áridas, el manejo de pilas y la calidad del producto final. La diagramación integra estratégicamente esquemas del proceso, tablas de parámetros de control y registro fotográfico de terreno, asegurando que la información sea de rápida consulta para el usuario. ',
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
+            { titulo: 'SISTEMA EDITORIAL', texto: 'Definición de la grilla de diagramación, tipografías, iconografía y uso de espacios aplicados a lo largo de las 38 páginas del documento, garantizando la consistencia gráfica, el descanso visual y la protección de los derechos de la obra. ',  color: 'amarillo' },
         ],
     },
     {
@@ -188,7 +185,7 @@ export const proyectosData: Proyecto[] = [
         aplicacionesTexto:
             'El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y polera corporativa.',
         aplicaciones: [
-            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
+            { titulo: 'MANUAL DE MARCA', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/imagenes_hero_servicios/aplicacion-amarilla.jpg`, color: 'amarillo' },
         ],
     },
     {
@@ -211,7 +208,7 @@ export const proyectosData: Proyecto[] = [
         aplicacionesTexto:
             'El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y polera corporativa.',
         aplicaciones: [
-            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
+            { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/imagenes_hero_servicios/aplicacion-amarilla.jpg`, color: 'amarillo' },
         ],
     },
 ]
@@ -223,7 +220,7 @@ function esTexto(v: unknown): v is string {
 function validarProyectos(datos: Proyecto[]): void {
     const campos: (keyof Proyecto)[] = [
         'slug', 'numero', 'nombre', 'logo', 'tagline', 'industria', 'entrega',
-        'resumenTitulo', 'resumenTexto', 'aplicacionesTitulo', 'aplicacionesTexto',
+        'resumenTitulo', 'resumenTexto',
         'desafioTexto', 'nombreTexto',
     ]
 

@@ -72,17 +72,17 @@
 }
 
 .hero-cards .card-yellow {
-    width: clamp(130px, 18vw, 260px);
+    width: clamp(130px, 20vw, 280px);
     animation-delay: 0s;
 }
 
 .hero-cards .card-white {
-    width: clamp(150px, 20vw, 280px);
+    width: clamp(130px, 20vw, 280px);
     animation-delay: -5s;
 }
 
 .hero-cards .card-orange {
-    width: clamp(120px, 17vw, 250px);
+    width: clamp(130px, 20vw, 260px);
     animation-delay: -10s;
 }
 
@@ -92,11 +92,11 @@
         left: 58%;
     }
     33%, 58% {
-        top: 28%;
+        top: 34%;
         left: 3%;
     }
     66%, 91% {
-        top: 62%;
+        top: 60%;
         left: 55%;
     }
     100% {

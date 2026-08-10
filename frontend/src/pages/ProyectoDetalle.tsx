@@ -72,12 +72,12 @@ function ProyectoDetalle(){
                 <div className="pd-aplicaciones-header">
                     <div className="pd-aplicaciones-texto">
                         <span className="section-tag-proyecto">APLICACIONES</span>
-                        <h2>{proyecto.aplicacionesTitulo}</h2>
-                        <p>{proyecto.aplicacionesTexto}</p>
+                        {proyecto.aplicacionesTitulo && <h2>{proyecto.aplicacionesTitulo}</h2>}
+                        {proyecto.aplicacionesTexto && <p>{proyecto.aplicacionesTexto}</p>}
                     </div>
-                    {(proyecto.aplicacionesImagen ?? proyecto.resumenImagen) && (
+                    {proyecto.aplicacionesImagen && (
                         <div className="pd-aplicaciones-imagen">
-                            <img src={proyecto.aplicacionesImagen ?? proyecto.resumenImagen} alt={`Mockup ${proyecto.nombre}`} />
+                            <img src={proyecto.aplicacionesImagen} alt={`Mockup ${proyecto.nombre}`} />
                         </div>
                     )}
                 </div>

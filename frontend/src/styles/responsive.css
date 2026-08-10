@@ -75,10 +75,6 @@
         border-right: none;
     }
 
-    .proyecto-item:nth-child(n + 7) {
-        border-bottom: none;
-    }
-
     /* SOLUCIONES */
     .soluciones-layout {
         min-height: auto;
@@ -88,19 +84,8 @@
     }
 
     .solucion-card {
-        position: static;
         width: 100%;
-        transform: none;
-    }
-
-    .solucion-card-tres {
-        transform: none;
-    }
-
-    .solucion-card-uno:hover,
-    .solucion-card-dos:hover,
-    .solucion-card-tres:hover {
-        transform: translateY(-8px);
+        aspect-ratio: auto;
     }
 
     /* PROCESO — timeline vertical */
@@ -143,6 +128,10 @@
         max-width: 280px;
         height: 180px;
         justify-self: start;
+    }
+
+    .timeline-image img {
+        object-fit: contain;
     }
 
     .dot {
@@ -262,6 +251,10 @@
         height: 160px;
     }
 
+    .timeline-image img {
+        object-fit: contain;
+    }
+
     .timeline-card-body {
         padding: 24px;
     }
@@ -277,11 +270,6 @@
 
     .equipo-item {
         text-align: center;
-    }
-
-    .equipo-info p {
-        max-width: 400px;
-        margin: 0 auto;
     }
 
     /* CONTACTO */

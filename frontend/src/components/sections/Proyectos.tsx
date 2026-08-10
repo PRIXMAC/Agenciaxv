@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 import SectionTag from '../ui/SectionTag'
 import { proyectosData } from '../../data/proyectosData'
 
-const proyectos = proyectosData.slice(0, 5).map((p) => ({
+const proyectos = proyectosData.slice(0, 6).map((p) => ({
     num: p.numero,
     slug: p.slug,
     color: parseInt(p.numero) % 2 === 0 ? 'naranjo' : 'amarillo' as const,
     title: p.nombre,
-    desc: p.tagline,
     img: p.logo,
 }))
 
@@ -60,8 +59,6 @@ function Proyectos() {
                             </div>
                             <div className="proyecto-overlay" />
                             <span className={`proyecto-numero numero-${p.color}`}>{p.num}</span>
-                            <div className="proyecto-contenido">
-                            </div>
                         </Link>
                     ))}
                 </div>

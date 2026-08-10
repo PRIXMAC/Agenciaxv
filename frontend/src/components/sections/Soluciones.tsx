@@ -3,6 +3,8 @@ import SectionTag from '../ui/SectionTag'
 import BotonAgenda from '../ui/BotonAgenda'
 // import ModalCorreo from '../ui/ModalCorreo'
 
+const base = import.meta.env.BASE_URL
+
 const soluciones = [
     {
         title: 'pack black',
@@ -14,9 +16,10 @@ const soluciones = [
             'Periodo de ejecución: 10 meses, con pago mensual.'
         ],
         className: 'solucion-card-uno',
+        img: `${base}images/img_paquetes/black.png`,
     },
     {
-        title: 'Paquete white',
+        title: 'Pack white',
         desc: [
             'Plan PRO de redes sociales (META).',
             'Reactivación de sitio web informativo.',
@@ -25,9 +28,10 @@ const soluciones = [
             'Periodo de ejecución: 10 meses, con pago mensual'
         ],
         className: 'solucion-card-tres',
+        img: `${base}images/img_paquetes/white.png`,
     },
     {
-        title: 'Paquete gold',
+        title: 'Pack gold',
         desc: [
             'Plan básico de redes sociales (META).',
             'Tienda online activa por 1 año.',
@@ -36,6 +40,7 @@ const soluciones = [
             'Periodo de ejecución: 10 meses, con pago mensual '
         ],
         className: 'solucion-card-dos',
+        img: `${base}images/img_paquetes/gold.png`,
     },
 ]
 
@@ -56,7 +61,11 @@ function Soluciones() {
 
                 <div className="soluciones-layout">
                     {soluciones.map((s, i) => (
-                        <article key={i} className={`solucion-card ${s.className}`}>
+                        <article
+                            key={i}
+                            className={`solucion-card ${s.className}`}
+                            style={{ backgroundImage: `url(${s.img})` }}
+                        >
                             <div className="solucion-contenido">
                                 <h3>{s.title}</h3>
                                 <ul className="solucion-lista">
