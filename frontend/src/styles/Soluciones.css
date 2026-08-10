@@ -32,6 +32,7 @@
     display: flex;
     gap: 30px;
     align-items: stretch;
+    margin-bottom: 40px;
 }
 
 .solucion-card {
@@ -41,11 +42,19 @@
     background: var(--white);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .solucion-card:hover {
     box-shadow: 0 20px 38px rgba(0, 0, 0, 0.2);
     transform: translateY(-8px);
+}
+
+.solucion-contenido {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .solucion-card h3 {
@@ -57,15 +66,52 @@
     color: var(--black);
 }
 
-.solucion-card p {
-    margin-bottom: 20px;
+/* Estilos para la lista de viñetas */
+.solucion-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    flex: 1;
+}
+
+.solucion-lista li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
     font-size: 0.9rem;
     line-height: 1.55;
     color: #333;
 }
 
+.solucion-lista li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--black); /* Corregido: antes era --var(black) */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.solucion-lista li:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos opcionales para viñetas de diferente color por tarjeta */
+.solucion-card-uno .solucion-lista li::before {
+    color: #000000; /* pack black */
+}
+
+.solucion-card-tres .solucion-lista li::before {
+    color: #000000; /* pack white*/
+}
+
+.solucion-card-dos .solucion-lista li::before {
+    color: #000000; /* pack gold */
+}
+
 .soluciones-accion {
     margin-top: 20px;
+    text-align: left;
 }
 
 .btn-soluciones {
@@ -85,4 +131,20 @@
 
 .btn-soluciones:hover {
     background: #d64a1d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .soluciones-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .solucion-card {
+        padding: 24px;
+    }
+    
+    .soluciones-encabezado {
+        margin-bottom: 40px;
+    }
 }

@@ -1,4 +1,6 @@
 
+import BotonAgenda from '../ui/BotonAgenda'
+
 
 function Hero() {
     return (
@@ -19,9 +21,9 @@ function Hero() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  
                             utlabore et dolore magna aliqua. 
                         </p>
-                        <a href="#contacto" className="hero-button">
-                            Agenda reuni&oacute;n
-                        </a>
+                        <BotonAgenda className="hero-button">
+                            Agenda reuniónn
+                        </BotonAgenda>
                     </div>
 
                     <div className="hero-cards">

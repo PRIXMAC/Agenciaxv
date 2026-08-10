@@ -1,27 +1,46 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import SectionTag from '../ui/SectionTag'
-import ModalCorreo from '../ui/ModalCorreo'
+import BotonAgenda from '../ui/BotonAgenda'
+// import ModalCorreo from '../ui/ModalCorreo'
 
 const soluciones = [
     {
-        title: 'Paquete básico',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.',
+        title: 'pack black',
+        desc: [
+            'Plan básico de redes sociales (META).',
+            'Reactivación de sitio web informativo.',
+            'Actualizaciones mensuales.',
+            'Campaña publicitaria para llevar tráfico al sitio web.',
+            'Periodo de ejecución: 10 meses, con pago mensual.'
+        ],
         className: 'solucion-card-uno',
     },
     {
-        title: 'Paquete FULL',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.',
+        title: 'Paquete white',
+        desc: [
+            'Plan PRO de redes sociales (META).',
+            'Reactivación de sitio web informativo.',
+            'Actualizaciones mensuales.',
+            'Campaña publicitaria para llevar tráfico al sitio web.',
+            'Periodo de ejecución: 10 meses, con pago mensual'
+        ],
         className: 'solucion-card-tres',
     },
     {
-        title: 'Paquete PREMIUM',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur fugiat eaque.',
+        title: 'Paquete gold',
+        desc: [
+            'Plan básico de redes sociales (META).',
+            'Tienda online activa por 1 año.',
+            'Actualizaciones mensuales.',
+            'Campaña publicitaria para llevar tráfico a la tienda online',
+            'Periodo de ejecución: 10 meses, con pago mensual '
+        ],
         className: 'solucion-card-dos',
     },
 ]
 
 function Soluciones() {
-    const [modalAbierto, setModalAbierto] = useState(false)
+    // const [modalAbierto, setModalAbierto] = useState(false)
 
     return (
         <section id="soluciones" className="soluciones">
@@ -40,28 +59,28 @@ function Soluciones() {
                         <article key={i} className={`solucion-card ${s.className}`}>
                             <div className="solucion-contenido">
                                 <h3>{s.title}</h3>
-                                <p>{s.desc}</p>
+                                <ul className="solucion-lista">
+                                    {s.desc.map((item, idx) => (
+                                        <li key={idx}>{item}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </article>
                     ))}
                 </div>
 
                 <div className="soluciones-accion">
-                    <button
-                        type="button"
-                        className="btn-soluciones"
-                        onClick={() => setModalAbierto(true)}
-                    >
-                        Consultar
-                    </button>
+                    <BotonAgenda className="btn-soluciones">
+                        Agendar reunión
+                    </BotonAgenda>
                 </div>
             </div>
 
-            <ModalCorreo
+            {/*<ModalCorreo
                 correo="agencia.decimoquinta@gmail.com"
                 abierto={modalAbierto}
                 onCerrar={() => setModalAbierto(false)}
-            />
+            />*/}
         </section>
     )
 }

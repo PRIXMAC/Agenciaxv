@@ -1,20 +1,25 @@
 import SectionTag from '../ui/SectionTag'
 
+const base = import.meta.env.BASE_URL
+
 const servicios = [
   {
     title: 'BRANDING\nESTRATÉGICO',
     description:
       'Construimos identidades visuales coherentes, memorables y alineadas con los objetivos de cada marca.',
+    img: `${base}images/card-blanca.jpg`,
   },
   {
     title: 'DISEÑO WEB',
     description:
       'Diseñamos experiencias digitales funcionales, modernas y adaptadas a computadores y dispositivos móviles.',
+    img: `${base}images/card-amarilla.jpg`,
   },
   {
     title: 'COMUNICACIÓN\nVISUAL',
     description:
       'Creamos piezas gráficas capaces de comunicar ideas, fortalecer la identidad y conectar con el público.',
+    img: `${base}images/card-naranja.jpg`,
   },
 ]
 
@@ -33,9 +38,15 @@ function Servicios() {
 
         <div className="servicios-grid">
           {servicios.map((servicio, i) => (
-            <article key={i} className="servicio-card">
-                <h3>{servicio.title}</h3>
-                <p>{servicio.description}</p>
+            <article
+              key={i}
+              className="servicio-card"
+              style={{ backgroundImage: `url(${servicio.img})` }}
+            >
+                <div className="servicio-card-body">
+                    <h3>{servicio.title}</h3>
+                    <p>{servicio.description}</p>
+                </div>
             </article>
           ))}
         </div>

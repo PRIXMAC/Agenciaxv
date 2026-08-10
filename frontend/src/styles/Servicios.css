@@ -24,10 +24,27 @@
 }
 
 .servicio-card {
+    position: relative;
     background: var(--light);
+    background-size: cover;
+    background-position: center;
     border-radius: var(--radius-lg);
     padding: 40px 30px;
+    overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(22, 16, 16, 0.75);
+    z-index: 0;
+}
+
+.servicio-card-body {
+    position: relative;
+    z-index: 1;
 }
 
 .servicio-card:hover {
@@ -39,13 +56,14 @@
     margin-bottom: 16px;
     font-size: 1.2rem;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.5;
     text-transform: uppercase;
-    color: var(--black);
+    color:  rgb(214, 212, 212);
 }
 
 .servicio-card p {
-    color: var(--gray);
+    color: var(--white);
     font-size: 0.9rem;
-    line-height: 1.6;
+    font-weight: 500;
+    line-height: 1.8;
 }

@@ -95,17 +95,17 @@ export const proyectosData: Proyecto[] = [
         aplicacionesTexto:
             'El sistema gráfico se implementó en los envases finales del producto, material impreso promocional para exposición en ferias especializadas del rubro y documentos técnicos.',
         aplicaciones: [
-            { titulo: 'LINEAMENTOS DE IDENTIDAD VISUAL', texto: ' Normas de uso para proteger la identidad gráfica y asegurar la consistencia técnica en todas sus aplicaciones comerciales.', imagen: `${base}images/All-inPacha.jpg`, color: 'amarillo' },
+            { titulo: 'LINEAMIENTOS DE IDENTIDAD VISUAL', texto: 'Normas de uso para proteger la identidad gráfica y asegurar la consistencia técnica en todas sus aplicaciones comerciales.', imagen: `${base}images/All-inPacha.jpg`, color: 'amarillo' },
         ],
     },
     {
         slug: 'consorcio-del-desierto',
         numero: '04',
-        nombre: 'Concorcio del Desierto',
+        nombre: 'Consorcio del Desierto',
         logo: `${base}images/consorciodeldesierto-logo.jpg`,
-        tagline: 'Proyecto de identidad visual',
+        tagline: 'Proyecto de Comunicación digital ',
         industria: 'Agricultura / Corporativo',
-        entrega: 'Branding corporativo y manual de normas',
+        entrega: 'Branding corporativo, manual de normas y RRSS',
         resumenTitulo: 'IDENTIDAD INSTITUCIONAL PARA EL DESARROLLO AGRÍCOLA REGIONAL.',
         resumenTexto:
             'El Consorcio del Desierto actúa como entidad articuladora de iniciativas sustentables. Su marca fue diseñada para reflejar solidez, liderazgo y un compromiso estructurado con el desarrollo agrícola.',
@@ -214,4 +214,50 @@ export const proyectosData: Proyecto[] = [
             { titulo: 'LOREM IPSUM', texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.', imagen: `${base}images/aplicacion-amarilla.jpg`, color: 'amarillo' },
         ],
     },
-] 
+]
+
+function esTexto(v: unknown): v is string {
+    return typeof v === 'string' && v.trim().length > 0
+}
+
+function validarProyectos(datos: Proyecto[]): void {
+    const campos: (keyof Proyecto)[] = [
+        'slug', 'numero', 'nombre', 'logo', 'tagline', 'industria', 'entrega',
+        'resumenTitulo', 'resumenTexto', 'aplicacionesTitulo', 'aplicacionesTexto',
+        'desafioTexto', 'nombreTexto',
+    ]
+
+    for (const proyecto of datos) {
+        const slug = typeof proyecto.slug === 'string' ? proyecto.slug : 'desconocido'
+
+        for (const campo of campos) {
+            if (!esTexto(proyecto[campo])) {
+                throw new Error(`proyectosData alterado: campo "${campo}" inválido en proyecto "${slug}"`)
+            }
+        }
+
+        if (!Array.isArray(proyecto.aplicaciones) || proyecto.aplicaciones.length === 0) {
+            throw new Error(`proyectosData alterado: proyecto "${slug}" sin aplicaciones válidas`)
+        }
+
+        for (const app of proyecto.aplicaciones) {
+            if (
+                !esTexto(app.titulo) ||
+                !esTexto(app.texto) ||
+                app.color !== 'amarillo'
+            ) {
+                throw new Error(`proyectosData alterado: aplicación inválida en proyecto "${slug}"`)
+            }
+        }
+    }
+}
+
+function congelarProyectos(datos: Proyecto[]): void {
+    for (const proyecto of datos) {
+        Object.freeze(proyecto)
+        proyecto.aplicaciones.forEach((app) => Object.freeze(app))
+    }
+}
+
+validarProyectos(proyectosData)
+congelarProyectos(proyectosData)

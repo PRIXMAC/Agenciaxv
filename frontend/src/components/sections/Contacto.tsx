@@ -1,4 +1,6 @@
 
+import BotonAgenda from '../ui/BotonAgenda'
+
 
 function Contacto() {
   return (
@@ -12,9 +14,9 @@ function Contacto() {
             <br />
             DE TU NEGOCIO?
           </h2>
-          <a href="mailto:agencia.decimoquinta@gmail.com" className="btn-contacto">
+          <BotonAgenda className="btn-contacto">
             AGENDAR REUNIÓN
-          </a>
+          </BotonAgenda>
         </div>
       </div>
     </section>

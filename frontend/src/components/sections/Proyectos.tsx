@@ -1,9 +1,9 @@
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import SectionTag from '../ui/SectionTag'
 import { proyectosData } from '../../data/proyectosData'
 
-const proyectos = proyectosData.slice(0, 8).map((p) => ({
+const proyectos = proyectosData.slice(0, 5).map((p) => ({
     num: p.numero,
     slug: p.slug,
     color: parseInt(p.numero) % 2 === 0 ? 'naranjo' : 'amarillo' as const,
@@ -14,7 +14,6 @@ const proyectos = proyectosData.slice(0, 8).map((p) => ({
 
 function Proyectos() {
     const [active, setActive] = useState<string | null>(null)
-    const gridRef = useRef<HTMLDivElement>(null)
 
     const handleTouchMove = useCallback((e: React.TouchEvent) => {
         const touch = e.touches[0]
@@ -44,7 +43,6 @@ function Proyectos() {
 
                 <div
                     className="proyectos-grid"
-                    ref={gridRef}
                     onTouchMove={handleTouchMove}
                     onTouchEnd={handleTouchEnd}
                 >
@@ -63,8 +61,6 @@ function Proyectos() {
                             <div className="proyecto-overlay" />
                             <span className={`proyecto-numero numero-${p.color}`}>{p.num}</span>
                             <div className="proyecto-contenido">
-                                <h3>{p.title}</h3>
-                                <p>{p.desc}</p>
                             </div>
                         </Link>
                     ))}

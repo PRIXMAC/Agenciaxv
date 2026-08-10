@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { useLocation, Link } from 'react-router-dom'
+import { useLocation, useNavigate, Link } from 'react-router-dom'
 
 const base = import.meta.env.BASE_URL
 
 type NavLink =
     | { label: string; href: string }
-    | { label: string; to: string }
+    | { label: string; to: string; section?: string }
 
 const navLinksHome: NavLink[] = [
     { label: 'Inicio', href: '#inicio' },
@@ -21,6 +21,7 @@ const navLinksHome: NavLink[] = [
 
 const navLinksProyecto: NavLink[] = [
     { label: 'Inicio', to: '/' },
+    { label: 'Proyectos', to: '/', section: 'proyectos' },
     { label: 'Contexto', href: '#contexto' },
     { label: 'Identidad', href: '#identidad' },
     { label: 'Sistema', href: '#sistema' },
@@ -30,6 +31,7 @@ const navLinksProyecto: NavLink[] = [
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
     const location = useLocation()
+    const navigate = useNavigate()
 
     const esProyectoDetalle = location.pathname.startsWith('/proyectos/')
 
@@ -54,6 +56,26 @@ function Navbar() {
         }
 
         setMenuOpen(false)
+    }
+
+    const handleSectionNav = (to: string, section: string) => {
+        if (location.pathname === to) {
+            document.getElementById(section)?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            })
+            return
+        }
+
+        navigate(to)
+        window.requestAnimationFrame(() => {
+            window.requestAnimationFrame(() => {
+                document.getElementById(section)?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                })
+            })
+        })
     }
 
     return (
@@ -102,7 +124,13 @@ function Navbar() {
                                     <Link
                                         className="nav-link"
                                         to={link.to}
-                                        onClick={() => setMenuOpen(false)}
+                                        onClick={(e) => {
+                                            if (link.section) {
+                                                e.preventDefault()
+                                                handleSectionNav(link.to, link.section)
+                                            }
+                                            setMenuOpen(false)
+                                        }}
                                     >
                                         {link.label}
                                     </Link>

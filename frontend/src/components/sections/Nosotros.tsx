@@ -5,13 +5,11 @@ const equipo = [
         name: 'MARÍA ASÍS',
         cargo: 'Dirección Creativa e Identidad Visual',
         profesion: 'Fundadora de Agencia Decimoquinta',
-        desc: 'Convierto la visión de tu negocio en una marca profesional y funcional. Te ayudo a construir una identidad visual estratégica que te haga único e identificable, generando coherencia y confianza para conectar con tu cliente ideal.',
     },
     {
         name: 'CAMILO PINEDA',
         cargo: 'Gestión de proyectos creativos y Marketing digital',
         profesion: 'Co-Fundador de Agencia Decimoquinta',
-        desc: 'Ofrezco un servicio creativo multifocal, donde tendrás un único punto de contacto encargado de toda la ejecución creativa. Esto abarca una gestión profesional unificada y resultados coherentes.',
     },
 ]
 
@@ -40,7 +38,6 @@ function Nosotros() {
                                 <br />
                                 <span className="equipo-cargo">{persona.cargo}</span>
                                 <span className="equipo-profesion">{persona.profesion}</span>
-                                {/* <p>{persona.desc}</p> */}
                             </div>
                         </div>
                     ))}
