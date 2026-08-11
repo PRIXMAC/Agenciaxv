@@ -8,8 +8,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "docker:build": "docker build -t agenciaxv .",
+    "docker:run": "docker run --rm -p 8080:8080 -e PORT=8080 agenciaxv",
+    "deploy:run": "gcloud run deploy agenciaxv --source . --region southamerica-west1 --allow-unauthenticated"
   },
   "dependencies": {
     "react": "^19.2.7",
@@ -26,7 +27,6 @@
     "eslint": "^10.6.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
-    "gh-pages": "^6.3.0",
     "globals": "^17.7.0",
     "sharp": "^0.35.3",
     "typescript": "~6.0.2",

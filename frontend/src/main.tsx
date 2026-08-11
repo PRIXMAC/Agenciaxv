@@ -5,11 +5,9 @@ import './styles/globals.css'
 import './styles/layout.css'
 import App from './App'
 
-const basename = import.meta.env.PROD ? '/Agenciaxv' : ''
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>,
