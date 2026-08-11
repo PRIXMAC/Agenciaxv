@@ -72,24 +72,24 @@
 }
 
 .hero-cards .card-yellow {
-    width: clamp(130px, 20vw, 280px);
+    width: clamp(130px, 18vw, 240px);
     animation-delay: 0s;
 }
 
 .hero-cards .card-white {
-    width: clamp(130px, 20vw, 280px);
+    width: clamp(130px, 18vw, 240px);
     animation-delay: -5s;
 }
 
 .hero-cards .card-orange {
-    width: clamp(130px, 20vw, 260px);
+    width: clamp(130px, 18vw, 220px);
     animation-delay: -10s;
 }
 
 @keyframes card-position-cycle {
     0%, 25% {
         top: 10%;
-        left: 58%;
+        left: 54%;
     }
     33%, 58% {
         top: 34%;
@@ -97,11 +97,11 @@
     }
     66%, 91% {
         top: 60%;
-        left: 55%;
+        left: 51%;
     }
     100% {
         top: 10%;
-        left: 58%;
+        left: 54%;
     }
 }
 

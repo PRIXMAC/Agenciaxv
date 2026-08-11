@@ -8,14 +8,16 @@
     .navbar-menu {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 280px;
         height: auto;
         background: var(--white);
         flex-direction: column;
         padding: 70px 30px 24px;
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
-        transition: right 0.3s ease;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0s linear 0.3s;
         z-index: 99;
     }
 
@@ -33,7 +35,9 @@
     }
 
     .navbar-menu.open {
-        right: 0;
+        transform: translateX(0);
+        visibility: visible;
+        transition: transform 0.3s ease, visibility 0s;
     }
 
     .navbar-nav {
@@ -186,6 +190,19 @@
 
     .hero {
         padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: clamp(1.9rem, 8.5vw, 2.6rem);
+        margin-block: 16px 24px;
+    }
+
+    .hero-cards {
+        overflow: hidden;
+    }
+
+    .hero-cards > div {
+        width: clamp(110px, 34vw, 130px);
     }
 
     :root {

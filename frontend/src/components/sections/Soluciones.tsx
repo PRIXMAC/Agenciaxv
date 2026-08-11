@@ -1,7 +1,5 @@
-// import { useState } from 'react'
 import SectionTag from '../ui/SectionTag'
 import BotonAgenda from '../ui/BotonAgenda'
-// import ModalCorreo from '../ui/ModalCorreo'
 
 const base = import.meta.env.BASE_URL
 
@@ -16,7 +14,7 @@ const soluciones = [
             'Periodo de ejecución: 10 meses, con pago mensual.'
         ],
         className: 'solucion-card-uno',
-        img: `${base}images/img_paquetes/black.png`,
+        img: `${base}images/img_paquetes/black.webp`,
     },
     {
         title: 'Pack white',
@@ -28,7 +26,7 @@ const soluciones = [
             'Periodo de ejecución: 10 meses, con pago mensual'
         ],
         className: 'solucion-card-tres',
-        img: `${base}images/img_paquetes/white.png`,
+        img: `${base}images/img_paquetes/white.webp`,
     },
     {
         title: 'Pack gold',
@@ -40,13 +38,11 @@ const soluciones = [
             'Periodo de ejecución: 10 meses, con pago mensual '
         ],
         className: 'solucion-card-dos',
-        img: `${base}images/img_paquetes/gold.png`,
+        img: `${base}images/img_paquetes/gold.webp`,
     },
 ]
 
 function Soluciones() {
-    // const [modalAbierto, setModalAbierto] = useState(false)
-
     return (
         <section id="soluciones" className="soluciones">
             <div className="container">
@@ -84,12 +80,6 @@ function Soluciones() {
                     </BotonAgenda>
                 </div>
             </div>
-
-            {/*<ModalCorreo
-                correo="contacto@agenciaxv.com"
-                abierto={modalAbierto}
-                onCerrar={() => setModalAbierto(false)}
-            />*/}
         </section>
     )
 }

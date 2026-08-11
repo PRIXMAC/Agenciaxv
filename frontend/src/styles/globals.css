@@ -30,8 +30,14 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 49px; 
-    scrollbar-gutter: stable; 
+    scroll-padding-top: 49px;
+    overflow-x: hidden;
+}
+
+@supports (overflow: clip) {
+    html {
+        overflow-x: clip;
+    }
 }
 
 body {

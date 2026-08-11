@@ -36,7 +36,7 @@ export const proyectosData: Proyecto[] = [
         resumenTitulo: 'UNA MARCA PARA UNA SOLUCIÓN CON VISIÓN SUSTENTABLE.',
         resumenTexto:
             'BioConcordia nació como respuesta a la necesidad de construir una marca potente y recordable para un producto agrícola innovador, capaz de ser reconocido en el rubro de los insumos agrícolas.',
-        resumenImagen: `${base}images/imagenes_proyectos/Bioconcordia 1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/Bioconcordia-1.jpg`,
         desafioTexto:
             'Necesidad de estructurar la marca no solo para su comercialización agrícola, sino para cumplir con las estrictas exigencias legales de registro de propiedad intelectual.',
         nombreTexto:
@@ -152,7 +152,6 @@ export const proyectosData: Proyecto[] = [
         resumenTitulo: ' DISEÑO EDITORIAL PARA LA TRANSFERENCIA DE CONOCIMIENTO AGRÍCOLA.',
         resumenTexto:
             ' El proyecto consistió en la estructuración visual y diagramación de un manual especializado en procesos de compostaje adaptados a las condiciones climáticas de la región, específicamente, en las zonas áridas del norte de Chile. El objetivo central fue facilitar la lectura y aplicación de procedimientos técnicos en terreno.',
-        resumenImagen: ``,
         desafioTexto:
             ' Jerarquizar y organizar información técnica, métricas y metodologías agronómicas en un formato visualmente claro para el público del sector agrícola. Requirió equilibrar el rigor científico del contenido con una diseño de lectura que resultara funcional y accesible para el usuario final.',
         nombreTexto:
