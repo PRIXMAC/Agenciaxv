@@ -139,3 +139,9 @@
     color: #444;
     line-height: 1.6;
 }
+
+@media (min-width: 992px) {
+    .timeline-item:nth-child(odd) .timeline-image {
+        align-self: end;
+    }
+}
