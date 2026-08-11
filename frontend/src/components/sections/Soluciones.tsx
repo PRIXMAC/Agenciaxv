@@ -86,7 +86,7 @@ function Soluciones() {
             </div>
 
             {/*<ModalCorreo
-                correo="agencia.decimoquinta@gmail.com"
+                correo="contacto@agenciaxv.com"
                 abierto={modalAbierto}
                 onCerrar={() => setModalAbierto(false)}
             />*/}

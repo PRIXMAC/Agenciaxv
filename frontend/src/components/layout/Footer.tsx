@@ -16,8 +16,8 @@ function Footer() {
 
             <div className="footer-right">
             <h3 className="footer-title">CONT&Aacute;CTANOS</h3>
-            <a href="mailto:agencia.decimoquinta@gmail.com" className="footer-link">
-                agencia.decimoquinta@gmail.com <FaEnvelope className="footer-icon" />
+            <a href="mailto:contacto@agenciaxv.com" className="footer-link">
+                contacto@agenciaxv.com <FaEnvelope className="footer-icon" />
             </a>
             <a href="https://wa.me/56996145262" className="footer-link footer-phone">
                 +56 9 9614 5262 <FaWhatsapp className="footer-icon" />
