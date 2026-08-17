@@ -198,7 +198,7 @@
     font-size: 1.1rem;
     font-weight: 800;
     color: var(--black);
-    font-family:var(--handing);
+    font-family:var(--heading);
 }
 .pd-aplicacion-bloque p {
     max-width: 520px;
@@ -206,7 +206,7 @@
     color: var(--gray);
     font-size: 0.9rem;
     line-height: 1.5;
-    font-family: var(--handing);
+    font-family: var(--heading);
 }
 .pd-aplicacion-caja {
     border-radius: var(--radius-lg);
