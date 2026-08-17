@@ -36,17 +36,17 @@ export const proyectosData: Proyecto[] = [
         resumenTitulo: 'UNA MARCA PARA UNA SOLUCIÓN CON VISIÓN SUSTENTABLE.',
         resumenTexto:
             'BioConcordia nació como respuesta a la necesidad de construir una marca potente y recordable para un producto agrícola innovador, capaz de ser reconocido en el rubro de los insumos agrícolas.',
-        resumenImagen: `${base}images/imagenes_proyectos/Bioconcordia-1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/Bioconcordia-1.webp`,
         desafioTexto:
             'Necesidad de estructurar la marca no solo para su comercialización agrícola, sino para cumplir con las estrictas exigencias legales de registro de propiedad intelectual.',
         nombreTexto:
             'Creación de naming, identidad visual, diseño de etiquetas, folletos informativos y el desarrollo del Manual Técnico de Normas.',
-        aplicacionesImagen:`${base}images/imagenes_proyectos/Bioconcordia-2.jpg`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Bioconcordia-2.webp`,
         aplicacionesTitulo: 'UNA IDENTIDAD PARA DISTINTOS SOPORTES.',
         aplicacionesTexto:
             'El sistema contempla aplicaciones en fondos, versiones cromáticas, mockups y piezas corporativas como la gigantografía, tarjeta de presentación, wallpaper y polera corporativa.',
         aplicaciones: [
-            { titulo: 'LINEAMIENTOS DE IDENTIDAD VISUAL', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/BioConcordia.jpg`, color: 'amarillo' },
+            { titulo: 'LINEAMIENTOS DE IDENTIDAD VISUAL', texto: 'Normas de uso para proteger la identidad, sus colores, tipografías y aplicaciones.', imagen: `${base}images/BioConcordia.webp`, color: 'amarillo' },
         ],
     },
     {
@@ -60,18 +60,18 @@ export const proyectosData: Proyecto[] = [
         resumenTitulo: 'UN RESPALDO CORPORATIVO PARA LA INNOVACIÓN AGRÍCOLA.',
         resumenTexto:
             'Sustancial se consolida como una entidad matriz vinculada a la creación de bioinsumos para la agricultura sustentable. La marca fue construida para transmitir autoridad, responsabilidad ambiental y confianza institucional.',
-        resumenImagen: `${base}images/imagenes_proyectos/Sustancial-1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/Sustancial-1.webp`,
         desafioTexto:
             'Crear una marca paraguas capaz de respaldar de manera objetiva productos específicos de su portafolio, manteniendo una coherencia visual impecable y transmitiendo un enfoque tecnológico y sustentable.',
         
         nombreTexto:
             'Diseño de identidad corporativa, estructuración de arquitectura de marca y definición de lineamientos visuales estratégicos.',
-        aplicacionesImagen:`${base}images/imagenes_proyectos/Sustancial-2.jpg`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Sustancial-2.webp`,
         aplicacionesTitulo: 'COHERENCIA VISUAL PARA EL ECOSISTEMA DE PRODUCTOS.',
         aplicacionesTexto:
             'El desarrollo incluye aplicaciones en soportes corporativos, firmas digitales, documentación técnica y elementos de respaldo para sus productos derivados.',
         aplicaciones: [
-            { titulo: 'LINEAMIENTOS DE IDENTIDAD VISUAL', texto: 'Parámetros estrictos que regulan la convivencia gráfica de la marca matriz con los distintos logotipos de los productos que respalda.', imagen: `${base}images/Sustancial.jpg`, color: 'amarillo' },
+            { titulo: 'LINEAMIENTOS DE IDENTIDAD VISUAL', texto: 'Parámetros estrictos que regulan la convivencia gráfica de la marca matriz con los distintos logotipos de los productos que respalda.', imagen: `${base}images/Sustancial.webp`, color: 'amarillo' },
         ],
     },
     {
@@ -85,17 +85,17 @@ export const proyectosData: Proyecto[] = [
         resumenTitulo: 'IDENTIDAD VISUAL PARA UN ACELERANTE AGRÍCOLA DE ALTO IMPACTO. ',
         resumenTexto:
             'All-in Pacha requirió el desarrollo de una identidad visual robusta orientada a destacar en el mercado de insumos, proyectando su carácter innovador y su base técnica orientada a la sustentabilidad.',
-        resumenImagen: `${base}images/imagenes_proyectos/All-in-Pacha-1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/All-in-Pacha-1.webp`,
         desafioTexto:
             'Necesidad de estructurar una marca comercialmente competitiva y, de forma paralela, desarrollar herramientas técnicas de educación para el usuario final que cumplan con los estándares del sector.',
         nombreTexto:
             'Creación de identidad visual, diseño de packaging, diseño de folletería promocional de alto tiraje y desarrollo editorial del Manual de Compostaje.',
-        aplicacionesImagen:`${base}images/imagenes_proyectos/All-in-Pacha-2.jpg`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/All-in-Pacha-2.webp`,
         aplicacionesTitulo: 'ADAPTABILIDAD PARA EMPAQUES Y MATERIAL EDUCATIVO.',
         aplicacionesTexto:
             'El sistema gráfico se implementó en los envases finales del producto, material impreso promocional para exposición en ferias especializadas del rubro y documentos técnicos.',
         aplicaciones: [
-            { titulo: 'LINEAMIENTOS DE IDENTIDAD VISUAL', texto: 'Normas de uso para proteger la identidad gráfica y asegurar la consistencia técnica en todas sus aplicaciones comerciales.', imagen: `${base}images/All-inPacha.jpg`, color: 'amarillo' },
+            { titulo: 'LINEAMIENTOS DE IDENTIDAD VISUAL', texto: 'Normas de uso para proteger la identidad gráfica y asegurar la consistencia técnica en todas sus aplicaciones comerciales.', imagen: `${base}images/All-inPacha.webp`, color: 'amarillo' },
         ],
     },
     {
@@ -109,13 +109,13 @@ export const proyectosData: Proyecto[] = [
         resumenTitulo: 'IDENTIDAD INSTITUCIONAL PARA EL DESARROLLO AGRÍCOLA REGIONAL.',
         resumenTexto:
             'El Consorcio del Desierto actúa como entidad articuladora de iniciativas sustentables. Su marca fue diseñada para reflejar solidez, liderazgo y un compromiso estructurado con el desarrollo agrícola.',
-        resumenImagen: `${base}images/imagenes_proyectos/Consorcio-del-Desierto-1.jpg`,
+        resumenImagen: `${base}images/imagenes_proyectos/Consorcio-del-Desierto-1.webp`,
         desafioTexto:
             'Proyectar una imagen de alto estándar corporativo que facilite el relacionamiento estratégico, la articulación con gestores de cooperativas y la validación formal de proyectos en el sector.',
         nombreTexto:
             'Creación de identidad corporativa, desarrollo de aplicaciones institucionales y Manual Técnico de Normas.',
         aplicaciones: [
-            { titulo: 'LINEAMIENTO DE IDENTIDAD VISUAL', texto: 'Directrices corporativas para mantener la formalidad, los colores institucionales y la correcta convivencia de la marca.', imagen: `${base}images/ConsorciodelDesierto.jpg`, color: 'amarillo' },
+            { titulo: 'LINEAMIENTO DE IDENTIDAD VISUAL', texto: 'Directrices corporativas para mantener la formalidad, los colores institucionales y la correcta convivencia de la marca.', imagen: `${base}images/ConsorciodelDesierto.webp`, color: 'amarillo' },
         ],
     },
     {
@@ -133,7 +133,7 @@ export const proyectosData: Proyecto[] = [
             'Estructurar una plataforma digital capaz de comunicar la trayectoria y el rigor de la consultora, desarrollando también soportes presenciales que consoliden su autoridad institucional en instancias B2B y relatorías.',
         nombreTexto:
             ' Arquitectura de la información y Diseño UX/UI, desarrollo de sitio web corporativo y diseño de soporte físico (Pendones institucionales).',
-        aplicacionesImagen:`${base}images/imagenes_proyectos/Tecno-Ambiente-1.png`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Tecno-Ambiente-1.webp`,
         aplicacionesTitulo: 'PROYECCIÓN VISUAL: DEL ENTORNO WEB A LA CONSULTORIA PRESENCIAL.',
         aplicacionesTexto:
             'El rediseño se integró en la nueva interfaz del sitio web para mejorar la experiencia de navegación del usuario, y se adaptó a formatos de exhibición física (pendón) para asegurar la legibilidad y presencia de la marca en eventos presenciales.',
@@ -145,7 +145,7 @@ export const proyectosData: Proyecto[] = [
         slug: 'proyecto-06',
         numero: '06',
         nombre: 'Manual de Compostaje para las zonas áridas de Chile ',
-        logo: `${base}images/imagenes_proyectos/image.png`,
+        logo: `${base}images/imagenes_proyectos/image.webp`,
         tagline: 'Proyecto de identidad visual',
         industria: 'Agricultura',
         entrega: ' Diseño editorial ',
@@ -156,7 +156,7 @@ export const proyectosData: Proyecto[] = [
             ' Jerarquizar y organizar información técnica, métricas y metodologías agronómicas en un formato visualmente claro para el público del sector agrícola. Requirió equilibrar el rigor científico del contenido con una diseño de lectura que resultara funcional y accesible para el usuario final.',
         nombreTexto:
             ' Diseño editorial, edición de imágenes, diagramación de tablas de datos y estructuración visual para formatos para su distribución física y digital.',
-        aplicacionesImagen:`${base}images/imagenes_proyectos/Consorcio-del-Desierto-3.jpg`,
+        aplicacionesImagen:`${base}images/imagenes_proyectos/Consorcio-del-Desierto-3.webp`,
         aplicacionesTitulo: ' ESTRUCTURA VISUAL AL SERVICIO DE LA INFORMACIÓN TÉCNICA.',
         aplicacionesTexto:
             'El desarrollo editorial se estructuró para facilitar la lectura de contenidos científicos y metodológicos, abarcando módulos complejos sobre los desafíos ambientales en zonas hiper-áridas, el manejo de pilas y la calidad del producto final. La diagramación integra estratégicamente esquemas del proceso, tablas de parámetros de control y registro fotográfico de terreno, asegurando que la información sea de rápida consulta para el usuario. ',

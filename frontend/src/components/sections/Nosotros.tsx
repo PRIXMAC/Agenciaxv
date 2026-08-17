@@ -7,13 +7,13 @@ const equipo = [
         name: 'MARÍA ASÍS',
         cargo: 'Dirección Creativa e Identidad Visual',
         profesion: 'Fundadora de Agencia Decimoquinta',
-        img: `${base}images/foto_perfil/maria.png`,
+        img: `${base}images/foto_perfil/maria.webp`,
     },
     {
         name: 'CAMILO PINEDA',
         cargo: 'Gestión de proyectos creativos y Marketing digital',
         profesion: 'Co-Fundador de Agencia Decimoquinta',
-        img: `${base}images/foto_perfil/camilo.png`,
+        img: `${base}images/foto_perfil/camilo.webp`,
     },
 ]
 
