@@ -123,7 +123,33 @@
 }
 
 .solucion-card-dos .solucion-lista li::before {
-    color: #f7f4f4; /* pack gold */
+    color: #f7d716; /* pack gold */
+}
+
+/* Pack white: fondo blanco claro y letras negras */
+.solucion-card-tres::before {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.solucion-card-tres h3 {
+    color: var(--black);
+}
+
+.solucion-card-tres .solucion-lista li {
+    color: #1f1f1f;
+}
+
+.solucion-card-tres .solucion-lista li::before {
+    color: var(--black);
+}
+
+/* Pack gold: letras amarillas */
+.solucion-card-dos h3 {
+    color: #f7d716;
+}
+
+.solucion-card-dos .solucion-lista li {
+    color: #f7e98e;
 }
 
 .soluciones-accion {

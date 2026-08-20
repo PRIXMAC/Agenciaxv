@@ -1,7 +1,0 @@
-*.pyc
-__pycache__/
-*.sqlite3
-token.json
-credentials.json
-.env
-staticfiles/
